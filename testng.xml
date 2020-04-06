@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="1" name="IPLocationTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.IPLocationAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="GetCityDetailTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.GetCityDetail" />
+		</classes>
+	</test>
+	<test thread-count="1" name="CountryListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.CountryListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="CheckDeviceTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.CheckDeviceAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="CheckUserRegistrationTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UserRegistrationAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserLogStatusTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UserLogStatusAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserRegistration_ForgotPasswordTest">
+		<classes>
+			<class
+				name="com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="ChangePasswordTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.ChangePasswordAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="GcmRegistartionTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.GcmRegistrationAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserLoginTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UserLoginAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserSubscriptionListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UserSubscriptionList" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserSubscriptionStatusTest">
+		<classes>
+			<class
+				name="com.LearningAPI.TestCases.UserSubscriptionStatusAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UploadProfileImagesTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UploadProfileImagesAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="SubjectWiseProgressReportTest">
+		<classes>
+			<class
+				name="com.LearningAPI.TestCases.SubjectWiseProgressReportAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="BoardClassListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.BoardClassListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserChatSectionDataTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.UserChatSectionDataAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="AllPackageListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.AllPackageListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="GetSubjectByPackageIdTest">
+		<classes>
+			<class
+				name="com.LearningAPI.TestCases.GetSubjectByPackageId_API" />
+		</classes>
+	</test>
+	<test thread-count="1" name="MySubscriptionsListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.MySubscriptionsListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="QuizQuestionListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.QuizQuestionListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="LeaderBoardTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.LeaderBoardAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="ApplyVoucherCodeTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.ApplyVoucherCodeAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="SearchContentbyKeywordTest">
+		<classes>
+			<class
+				name="com.LearningAPI.TestCases.SearchContentbyKeyword_API" />
+		</classes>
+	</test>
+	<test thread-count="1" name="GetMCQQuestionListTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.GetMCQQuestionListAPI" />
+		</classes>
+	</test>
+	<test thread-count="1" name="ProfileUpdateTest">
+		<classes>
+			<class name="com.LearningAPI.TestCases.ProfileUpdateAPI" />
+		</classes>
+	</test>
+</suite>

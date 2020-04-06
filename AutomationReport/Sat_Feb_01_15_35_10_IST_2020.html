@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ExtentReports Library 2.40.0 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+Documentation: http://extentreports.relevantcodes.com 
+-->
+<meta http-equiv='content-type' content='text/html; charset=UTF-8' /> 
+<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<title>
+ExtentReports 2.0
+</title>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css' type='text/css'>
+<link href='https://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.css' type='text/css' rel='stylesheet' />
+<link href='http://cdn.rawgit.com/anshooarora/extentreports/c52c8b4c4cf7853d658daeb1cb09207ed5a667c6/cdn/extent.css' type='text/css' rel='stylesheet' />
+
+<style>
+
+
+
+
+
+</style>
+</head>
+<body class='extent'>
+<!-- nav -->
+<nav>
+<ul id='slide-out' class='side-nav fixed'>
+<li class='logo'>
+<a class='logo-content' href='http://extentreports.relevantcodes.com'><span>ExtentReports</span></a>
+<a class='menu-toggle right'><i class='mdi-navigation-menu'></i></a>
+</li> 
+<li class='analysis waves-effect active'><a href='#!' class='test-view'><i class='mdi-action-dashboard'></i>Test Details</a></li>
+<li class='analysis waves-effect'><a href='#!' class='categories-view'><i class='mdi-maps-local-offer'></i>Categories</a></li>
+<li class='analysis waves-effect'><a href='#!' class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a></li>
+<li class='analysis waves-effect'><a href='#!' class='testrunner-logs-view'><i class='mdi-action-assignment'></i>TestRunner Logs</a></li>
+</ul>
+<a href='#' data-activates='slide-out' class='button-collapse'><i class='mdi-navigation-menu medium'></i></a>
+<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
+<ul class='right hide-on-med-and-down nav-right'>
+<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $(".theme-selector").click();' title='Click to toggle dark theme. To enable by default, use js configuration $(".theme-selector").click();'>
+<i class='mdi-hardware-desktop-windows'></i>
+</li>
+<li>
+<span class='suite-started-time'>2020-02-01 15:35:14</span>
+</li>
+<li>
+<span>v2.40.0</span>
+</li>
+</ul>
+</nav>
+<!-- /nav -->
+
+<!-- container -->
+<div class='container'>
+
+<!-- dashboard -->
+<div id='dashboard-view' class='row'>
+<div class='time-totals'>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-tests'> 
+<span class='panel-name'>Total Tests</span> 
+<span class='total-tests'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Steps</span> 
+<span class='total-steps'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l4 m4 s12'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Time Taken</span> 
+<span class='suite-total-time-taken panel-lead'>0h 0m 3s+955ms</span> 
+</div> 
+</div>
+<div class='col l2 m6 s6 suite-start-time'>
+<div class='card green-accent'> 
+<span class='panel-name'>Start</span> 
+<span class='panel-lead suite-started-time'>2020-02-01 15:35:10</span> 
+</div> 
+</div>
+<div class='col l2 m6 s6 suite-end-time'>
+<div class='card pink-accent'> 
+<span class='panel-name'>End</span> 
+<span class='panel-lead suite-ended-time'>2020-02-01 15:35:14</span> 
+</div> 
+</div>
+</div>
+<div class='charts'>
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Tests View</span>
+</div> 
+<div class='panel-setting modal-trigger test-count-setting right'>
+<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='test-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div> 
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Steps View</span>
+</div> 
+<div class='panel-setting modal-trigger step-status-filter right'>
+<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='step-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div>
+<div class='col s12 m12 l4 fh'> 
+<div class='card-panel'> 
+<span class='panel-name'>Pass Percentage</span> 
+<span class='pass-percentage panel-lead'></span> 
+<div class='progress light-blue lighten-3'> 
+<div class='determinate light-blue'></div> 
+</div> 
+</div> 
+</div>
+</div>
+<div class='system-view'>
+<div class='col l4 m12 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Environment</span>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>e7840</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>1.8.0_201</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Host Name</td>
+<td>E7841-Tech</td>
+</tr>
+<tr>
+<td>Selenium Version</td>
+<td>2.53.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class='category-summary-view'>
+<div class='col l4 m6 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Categories</span>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /dashboard -->
+
+<!-- tests -->
+<div id='test-view' class='row'>
+<div class='col s5'>
+<div class='card-panel heading'>
+<h5>Tests</h5>
+</div>
+<div class='card-panel filters'>
+<div>
+<a data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#' class='dropdown-button button tests-toggle'><i class='mdi-action-subject icon'></i></a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li class='pass'><a href='#!'>Pass</a></li>
+<li class='fail'><a href='#!'>Fail</a></li>
+<li class='skip'><a href='#!'>Skip</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a id='clear-filters' alt='Clear Filters' title='Clear Filters'><i class='mdi-navigation-close icon'></i></a>
+</div>
+<div>&nbsp;&middot;&nbsp;</div>
+<div>
+<a id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'><i class='mdi-action-track-changes icon'></i></a>
+</div>
+<div>
+<a id='refreshCharts' alt='Refresh Charts on Filter' title='Refresh Charts on Filter' class='enabled'><i class='mdi-navigation-refresh icon'></i></i></a>
+</div>
+<div>&nbsp;&middot;</div>
+<div class='search' alt='Search tests' title='Search tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v no-margin-v vh100'>
+<div class='wrapper'>
+<ul id='test-collection' class='test-collection'>
+<li class='collection-item test displayed active pass'>
+<div class='test-head'>
+<span class='test-name'>GetSubjectByPackageId_API </span>
+<span class='test-status label right capitalize outline pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' class='test-started-time label green lighten-2 text-white'>2020-02-01 15:35:11</span>
+<span title='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-02-01 15:35:13</span>
+<span title='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+440ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:11</td>
+<td class='step-details'>GetSubjectByPackageId_API Test started</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:11</td>
+<td class='step-details'>API EndPoint is :-  http://test-www.extramarks.com/</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:11</td>
+<td class='step-details'>API URL IS :-  http://test-www.extramarks.com/api/v1.0/getsubjectsbypackage?apikey=47C7C9F7711308555B400B9D0&checksum=702f621e39a68e7c5258f0d75f333860&package_id=33</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:11</td>
+<td class='step-details'>Method Type :- GET</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:11</td>
+<td class='step-details'>Execute API</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Response is :-  {
+"status": 0,
+"message": "Invalid Package, Board/Class is wrong"
+}</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Validation_paramvalue is :-  message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>ExpectedResponse_paramvalue is :-  Invalid Package, Board/Class is wrong</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>ValidationNode is :-</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>SessionID is :- null</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Response Time in ms  :-1098</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Status code is:- 200</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Response Status Line is :- HTTP/1.1 200 OK</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Content Type is:-application/json; charset=utf-8</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Content Encoding is:-null</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>ActualResponse_paramValue  is :- Invalid Package, Board/Class is wrong</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Actual Response Parameter Value is match with Expected Response Parameter Value</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass'>
+<div class='test-head'>
+<span class='test-name'>GetSubjectByPackageId_API </span>
+<span class='test-status label right capitalize outline pass'>pass</span>
+<span class='category-assigned hide '></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' class='test-started-time label green lighten-2 text-white'>2020-02-01 15:35:13</span>
+<span title='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-02-01 15:35:14</span>
+<span title='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+999ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>GetSubjectByPackageId_API Test started</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>API EndPoint is :-  http://test-www.extramarks.com/</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>API URL IS :-  http://test-www.extramarks.com/api/v1.0/getsubjectsbypackage?apikey=47C7C9F7711308555B400B9D0&checksum=2b03514a82502a286b95b510af0c80ba&package_id=440</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Method Type :- GET</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:13</td>
+<td class='step-details'>Execute API</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Response is :-  {
+"subject_added": "no",
+"subject_details": [
+{
+"subject_id": 177,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/47.png",
+"subject_name": "Science",
+"chapter_details": [
+{
+"chapter_id": 1102,
+"chapter_name": "Chemical Reactions and Equations",
+"topic_details": [
+{
+"topic_id": 559240,
+"topic_name": "Chemical Reactions, Equations and Balancing"
+},
+{
+"topic_id": 559241,
+"topic_name": "Types of Chemical Reactions"
+}
+]
+},
+{
+"chapter_id": 1110,
+"chapter_name": "Acids, Bases and Salts",
+"topic_details": [
+{
+"topic_id": 559242,
+"topic_name": "Acids"
+},
+{
+"topic_id": 554781,
+"topic_name": "Bases"
+},
+{
+"topic_id": 554782,
+"topic_name": "Neutralisation and Salts"
+},
+{
+"topic_id": 559243,
+"topic_name": "Some Commercially Important Salts"
+},
+{
+"topic_id": 559244,
+"topic_name": "Natural and Synthestic Indicators"
+},
+{
+"topic_id": 554786,
+"topic_name": "pH and Universal Indicator"
+}
+]
+},
+{
+"chapter_id": 1111,
+"chapter_name": "Metals and Non-Metal",
+"topic_details": [
+{
+"topic_id": 559245,
+"topic_name": "Physical Properties of Metals"
+},
+{
+"topic_id": 555112,
+"topic_name": "Chemical Properties of Metals"
+},
+{
+"topic_id": 555113,
+"topic_name": "Physical and Chemical Properties of Non–metals"
+},
+{
+"topic_id": 555114,
+"topic_name": "Ionic Compounds"
+},
+{
+"topic_id": 559246,
+"topic_name": "Corrosion and Alloys"
+},
+{
+"topic_id": 559247,
+"topic_name": "Metallergical Processes"
+},
+{
+"topic_id": 559248,
+"topic_name": "Extracting Metals"
+}
+]
+},
+{
+"chapter_id": 1114,
+"chapter_name": "Carbon and its Compounds",
+"topic_details": [
+{
+"topic_id": 559249,
+"topic_name": "Chemistry of Carbon"
+},
+{
+"topic_id": 554788,
+"topic_name": "Covalent Bonding in Carbon and other Compounds"
+},
+{
+"topic_id": 554789,
+"topic_name": "Allotropes of Carbon"
+},
+{
+"topic_id": 554794,
+"topic_name": "Nomenclature and Isomerism"
+},
+{
+"topic_id": 554792,
+"topic_name": "Homologous Series"
+},
+{
+"topic_id": 554793,
+"topic_name": "Functional Groups"
+},
+{
+"topic_id": 554795,
+"topic_name": "Chemical Properties of Carbon Compounds"
+},
+{
+"topic_id": 554796,
+"topic_name": "Ethanol"
+},
+{
+"topic_id": 554797,
+"topic_name": "Ethanoic acid"
+},
+{
+"topic_id": 554798,
+"topic_name": "Soaps and Detergents"
+}
+]
+},
+{
+"chapter_id": 1107,
+"chapter_name": "Periodic Classification of Elements",
+"topic_details": [
+{
+"topic_id": 559250,
+"topic_name": "Earlier Classification of Elements"
+},
+{
+"topic_id": 555193,
+"topic_name": "Modern Periodic Table"
+},
+{
+"topic_id": 559251,
+"topic_name": "Trends in Modern Periodic Table"
+}
+]
+},
+{
+"chapter_id": 1105,
+"chapter_name": "Life Processes",
+"topic_details": [
+{
+"topic_id": 554950,
+"topic_name": "Life Processes"
+},
+{
+"topic_id": 559225,
+"topic_name": "Nutrition in Plants: Autotrophic"
+},
+{
+"topic_id": 554952,
+"topic_name": "Heterotrophic Nutrition"
+},
+{
+"topic_id": 554953,
+"topic_name": "Nutrition in Human Beings"
+},
+{
+"topic_id": 559226,
+"topic_name": "Respiration"
+},
+{
+"topic_id": 559227,
+"topic_name": "Transportation in Human Beings"
+},
+{
+"topic_id": 559228,
+"topic_name": "Gaseous Exchange, Excretion and Transportation in Plants"
+},
+{
+"topic_id": 559229,
+"topic_name": "Excretion in Animals"
+}
+]
+},
+{
+"chapter_id": 1115,
+"chapter_name": "Control and Coordination",
+"topic_details": [
+{
+"topic_id": 554829,
+"topic_name": "Nervous System"
+},
+{
+"topic_id": 554831,
+"topic_name": "Reflex action and Reflex Arc"
+},
+{
+"topic_id": 554832,
+"topic_name": "Central and Peripheral Nervous System"
+},
+{
+"topic_id": 554834,
+"topic_name": "Growth and Movement in Plants"
+},
+{
+"topic_id": 554835,
+"topic_name": "Plant Hormones"
+},
+{
+"topic_id": 554836,
+"topic_name": "Endocrine System in Humans"
+},
+{
+"topic_id": 554839,
+"topic_name": "Disorders of Endocrine Gland"
+}
+]
+},
+{
+"chapter_id": 1108,
+"chapter_name": "How do Organisms Reproduce?",
+"topic_details": [
+{
+"topic_id": 559230,
+"topic_name": "Reproduction in Organism"
+},
+{
+"topic_id": 559231,
+"topic_name": "Asexual Reproduction in Organisms"
+},
+{
+"topic_id": 559232,
+"topic_name": "Vegetative Propagation in Plants"
+},
+{
+"topic_id": 559233,
+"topic_name": "Sexual Reproduction in Organisms"
+},
+{
+"topic_id": 559234,
+"topic_name": "Reproduction in Humans Beings"
+},
+{
+"topic_id": 554927,
+"topic_name": "Sexual Reproduction in Flowering Plants"
+},
+{
+"topic_id": 554931,
+"topic_name": "Reproductive Health"
+}
+]
+},
+{
+"chapter_id": 1117,
+"chapter_name": "Heredity and Evolution",
+"topic_details": [
+{
+"topic_id": 554970,
+"topic_name": "Heredity and Variation"
+},
+{
+"topic_id": 554971,
+"topic_name": "Mendel and his Experiments"
+},
+{
+"topic_id": 554973,
+"topic_name": "Sex determination"
+},
+{
+"topic_id": 559235,
+"topic_name": "Evolution"
+},
+{
+"topic_id": 554976,
+"topic_name": "Speciation"
+},
+{
+"topic_id": 559236,
+"topic_name": "Evolution and Classification"
+},
+{
+"topic_id": 554977,
+"topic_name": "Evolutionary Relationship"
+},
+{
+"topic_id": 554978,
+"topic_name": "Fossils"
+},
+{
+"topic_id": 559237,
+"topic_name": "Evolutionary Stages and Human Evolution"
+}
+]
+},
+{
+"chapter_id": 1106,
+"chapter_name": "Light - Reflection and Refraction",
+"topic_details": [
+{
+"topic_id": 554981,
+"topic_name": "Reflection of Light"
+},
+{
+"topic_id": 554982,
+"topic_name": "Spherical Mirrors"
+},
+{
+"topic_id": 554983,
+"topic_name": "Refraction of Light"
+},
+{
+"topic_id": 554984,
+"topic_name": "Spherical Lenses"
+},
+{
+"topic_id": 559486,
+"topic_name": "Image Formation by Lenses"
+},
+{
+"topic_id": 559487,
+"topic_name": "Power of a Lens"
+}
+]
+},
+{
+"chapter_id": 1109,
+"chapter_name": "Human Eye and Colourful World",
+"topic_details": [
+{
+"topic_id": 559488,
+"topic_name": "The Human Eye: Parts and their Functions"
+},
+{
+"topic_id": 559489,
+"topic_name": "Defects of Vision"
+},
+{
+"topic_id": 559490,
+"topic_name": "Refraction of Light through a Prism"
+},
+{
+"topic_id": 555233,
+"topic_name": "Atmospheric Refraction"
+},
+{
+"topic_id": 555234,
+"topic_name": "Scattering of Light"
+}
+]
+},
+{
+"chapter_id": 1116,
+"chapter_name": "Electricity",
+"topic_details": [
+{
+"topic_id": 559491,
+"topic_name": "Electric Current and Circuit"
+},
+{
+"topic_id": 554841,
+"topic_name": "Electric Potential and Potential Difference"
+},
+{
+"topic_id": 554843,
+"topic_name": "Circuit Diagram"
+},
+{
+"topic_id": 554844,
+"topic_name": "Ohm's Law"
+},
+{
+"topic_id": 559492,
+"topic_name": "Factors on which the Resistance of Conductor Depends"
+},
+{
+"topic_id": 559493,
+"topic_name": "Combination of Resistors"
+},
+{
+"topic_id": 554848,
+"topic_name": "Heating Effect of Electric Current"
+},
+{
+"topic_id": 554847,
+"topic_name": "Electric Power"
+}
+]
+},
+{
+"chapter_id": 1113,
+"chapter_name": "Magnetic Effects of Electric Current",
+"topic_details": [
+{
+"topic_id": 559494,
+"topic_name": "Magnetic Field and Field Lines"
+},
+{
+"topic_id": 559495,
+"topic_name": "Magnetic Field due to a Current carrying Conductor"
+},
+{
+"topic_id": 559496,
+"topic_name": "Force on Current Carrying Conductor in a Magnetic Field"
+},
+{
+"topic_id": 554989,
+"topic_name": "Electromagnetic Induction"
+},
+{
+"topic_id": 559497,
+"topic_name": "Electric Motor and Generator"
+},
+{
+"topic_id": 559498,
+"topic_name": "Domestic Electric Circuits"
+}
+]
+},
+{
+"chapter_id": 1112,
+"chapter_name": "Sources of Energy",
+"topic_details": [
+{
+"topic_id": 559499,
+"topic_name": "Good Sources of Energy"
+},
+{
+"topic_id": 555227,
+"topic_name": "Conventional Sources of Energy"
+},
+{
+"topic_id": 555229,
+"topic_name": "Non-Conventional Sources of Energy"
+},
+{
+"topic_id": 559500,
+"topic_name": "Environmental Consequences and Availability of Energy Resources"
+}
+]
+},
+{
+"chapter_id": 1103,
+"chapter_name": "Our Environment",
+"topic_details": [
+{
+"topic_id": 559238,
+"topic_name": "Environment: Component and Types"
+},
+{
+"topic_id": 555180,
+"topic_name": "Food Chain and Food Web"
+},
+{
+"topic_id": 555181,
+"topic_name": "How do Human Activities Affect the Environment?"
+}
+]
+},
+{
+"chapter_id": 1104,
+"chapter_name": "Sustainable Management of Natural Resources",
+"topic_details": [
+{
+"topic_id": 555081,
+"topic_name": "Natural Resources: Management and Need"
+},
+{
+"topic_id": 555082,
+"topic_name": "3'R of Management"
+},
+{
+"topic_id": 559239,
+"topic_name": "Forests and Stakeholders"
+},
+{
+"topic_id": 555085,
+"topic_name": "Water: Management and Need"
+},
+{
+"topic_id": 555086,
+"topic_name": "Dams"
+},
+{
+"topic_id": 555087,
+"topic_name": "Water Harvesting"
+},
+{
+"topic_id": 555088,
+"topic_name": "Coal and Petroleum"
+}
+]
+}
+]
+},
+{
+"subject_id": 176,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/46.png",
+"subject_name": "Mathematics",
+"chapter_details": [
+{
+"chapter_id": 1092,
+"chapter_name": "Real Numbers",
+"topic_details": [
+{
+"topic_id": 559462,
+"topic_name": "Euclid’s Division Lemma and Fundamental Theorem"
+},
+{
+"topic_id": 559463,
+"topic_name": "Irrational and Rational Number"
+}
+]
+},
+{
+"chapter_id": 1093,
+"chapter_name": "Polynomials",
+"topic_details": [
+{
+"topic_id": 559464,
+"topic_name": "Polynomials and Their Zeroes"
+},
+{
+"topic_id": 559465,
+"topic_name": "Division of Polynomials"
+}
+]
+},
+{
+"chapter_id": 1088,
+"chapter_name": "Pair of Linear Equations in Two Variables",
+"topic_details": [
+{
+"topic_id": 559466,
+"topic_name": "Pair of Linear Equations in Two Variables"
+},
+{
+"topic_id": 559467,
+"topic_name": "Graphical Method of Solution of a Pair of Linear Equations"
+},
+{
+"topic_id": 559468,
+"topic_name": "Algebraic Methods of Solving Pair of Linear Equations"
+},
+{
+"topic_id": 559469,
+"topic_name": "Equations Reducible to a Pair of Linear Equations"
+}
+]
+},
+{
+"chapter_id": 1094,
+"chapter_name": "Quadratic Equations",
+"topic_details": [
+{
+"topic_id": 554561,
+"topic_name": "Quadratic Equations"
+},
+{
+"topic_id": 559470,
+"topic_name": "Methods for Solving Quadratic Equations"
+},
+{
+"topic_id": 554565,
+"topic_name": "Nature of Roots"
+}
+]
+},
+{
+"chapter_id": 1095,
+"chapter_name": "Arithmetic Progression",
+"topic_details": [
+{
+"topic_id": 559471,
+"topic_name": "Arithmetic Progression and its General Term"
+},
+{
+"topic_id": 559472,
+"topic_name": "Sum of n Terms of an Arithmetic Progressions"
+}
+]
+},
+{
+"chapter_id": 1096,
+"chapter_name": "Triangles",
+"topic_details": [
+{
+"topic_id": 559473,
+"topic_name": "Similar Figures"
+},
+{
+"topic_id": 559474,
+"topic_name": "Basic Proportionality Theorem"
+},
+{
+"topic_id": 559475,
+"topic_name": "Criteria for Similarity of Triangles"
+},
+{
+"topic_id": 559476,
+"topic_name": "Areas of Similar Triangles and Pythagoras Theorem"
+}
+]
+},
+{
+"chapter_id": 1091,
+"chapter_name": "Coordinate Geometry",
+"topic_details": [
+{
+"topic_id": 554462,
+"topic_name": "Distance Formula"
+},
+{
+"topic_id": 554464,
+"topic_name": "Section Formula"
+},
+{
+"topic_id": 559477,
+"topic_name": "Area of a Triangle"
+}
+]
+},
+{
+"chapter_id": 1098,
+"chapter_name": "Introduction to Trigonometry",
+"topic_details": [
+{
+"topic_id": 559478,
+"topic_name": "Trigonometric Ratios"
+},
+{
+"topic_id": 554469,
+"topic_name": "Trigonometric Identities"
+}
+]
+},
+{
+"chapter_id": 1099,
+"chapter_name": "Some Applications of Trigonometry",
+"topic_details": [
+{
+"topic_id": 554586,
+"topic_name": "Some Applications of Trigonometry"
+}
+]
+},
+{
+"chapter_id": 1100,
+"chapter_name": "Circles",
+"topic_details": [
+{
+"topic_id": 554376,
+"topic_name": "Tangent to a Circle"
+},
+{
+"topic_id": 559479,
+"topic_name": "Number of Tangents From a Point on a Circle"
+}
+]
+},
+{
+"chapter_id": 1087,
+"chapter_name": "Constructions",
+"topic_details": [
+{
+"topic_id": 554447,
+"topic_name": "Division of a Line Segment"
+},
+{
+"topic_id": 554448,
+"topic_name": "Construction of Similar Triangles"
+},
+{
+"topic_id": 554449,
+"topic_name": "Construction of Tangents to a Circle"
+}
+]
+},
+{
+"chapter_id": 1101,
+"chapter_name": "Area Related to Circles",
+"topic_details": [
+{
+"topic_id": 559480,
+"topic_name": "Area Related to Circles"
+}
+]
+},
+{
+"chapter_id": 1097,
+"chapter_name": "Surface Areas and Volumes",
+"topic_details": [
+{
+"topic_id": 559481,
+"topic_name": "Surface Area of Combination of Solids"
+},
+{
+"topic_id": 559482,
+"topic_name": "Volume of Combination of Solids"
+},
+{
+"topic_id": 559483,
+"topic_name": "Conversion of Solids and Frustum of a Cone"
+}
+]
+},
+{
+"chapter_id": 1090,
+"chapter_name": "Statistics",
+"topic_details": [
+{
+"topic_id": 554603,
+"topic_name": "Mean of Grouped Data"
+},
+{
+"topic_id": 554605,
+"topic_name": "Mode of Grouped Data"
+},
+{
+"topic_id": 554604,
+"topic_name": "Median of Grouped Data"
+},
+{
+"topic_id": 559484,
+"topic_name": "Cumulative Frequency Curve"
+}
+]
+},
+{
+"chapter_id": 1089,
+"chapter_name": "Probability",
+"topic_details": [
+{
+"topic_id": 559485,
+"topic_name": "Probability"
+}
+]
+}
+]
+},
+{
+"subject_id": 171,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/42.png",
+"subject_name": "Social Science",
+"chapter_details": [
+{
+"chapter_id": 174,
+"chapter_name": "History : India and the Contemporary World - II",
+"topic_details": [
+{
+"topic_id": 1074,
+"topic_name": "The Rise of Nationalism in Europe"
+},
+{
+"topic_id": 1076,
+"topic_name": "Nationalism in India"
+},
+{
+"topic_id": 1077,
+"topic_name": "The Making of a Global World"
+},
+{
+"topic_id": 1081,
+"topic_name": "The Age of Industrialisation"
+},
+{
+"topic_id": 1078,
+"topic_name": "Print Culture and the Modern World"
+}
+]
+},
+{
+"chapter_id": 173,
+"chapter_name": "Geography : Contemporary India - II",
+"topic_details": [
+{
+"topic_id": 1069,
+"topic_name": "Resources and Development"
+},
+{
+"topic_id": 947,
+"topic_name": "Forest and Wildlife Resources"
+},
+{
+"topic_id": 1070,
+"topic_name": "Water Resources"
+},
+{
+"topic_id": 1071,
+"topic_name": "Agriculture"
+},
+{
+"topic_id": 1072,
+"topic_name": "Minerals and Energy Resources"
+},
+{
+"topic_id": 1068,
+"topic_name": "Manufacturing Industries"
+},
+{
+"topic_id": 1073,
+"topic_name": "Life Lines of National Economy"
+}
+]
+},
+{
+"chapter_id": 172,
+"chapter_name": "Political Science : Democratic Politics-II",
+"topic_details": [
+{
+"topic_id": 1008,
+"topic_name": "Power Sharing"
+},
+{
+"topic_id": 1007,
+"topic_name": "Federalism"
+},
+{
+"topic_id": 1013,
+"topic_name": "Democracy and Diversity"
+},
+{
+"topic_id": 1006,
+"topic_name": "Gender, Religion and Caste"
+},
+{
+"topic_id": 1010,
+"topic_name": "Popular Struggles and Movements"
+},
+{
+"topic_id": 1009,
+"topic_name": "Political Parties"
+},
+{
+"topic_id": 1012,
+"topic_name": "Outcomes of Democracy"
+},
+{
+"topic_id": 1011,
+"topic_name": "Challenges to Democracy"
+}
+]
+},
+{
+"chapter_id": 175,
+"chapter_name": "Economics",
+"topic_details": [
+{
+"topic_id": 1085,
+"topic_name": "Development"
+},
+{
+"topic_id": 1082,
+"topic_name": "Sectors of the Indian Economy"
+},
+{
+"topic_id": 1086,
+"topic_name": "Money and Credit"
+},
+{
+"topic_id": 1083,
+"topic_name": "Globalisation and the Indian Economy"
+},
+{
+"topic_id": 1084,
+"topic_name": "Consumer Rights"
+}
+]
+},
+{
+"chapter_id": 215,
+"chapter_name": "Disaster Management - Together, Towards a Safer India-III",
+"topic_details": [
+{
+"topic_id": 3191,
+"topic_name": "Tsunami “ The killer sea waves\""
+},
+{
+"topic_id": 3192,
+"topic_name": "Survival Skills"
+},
+{
+"topic_id": 3193,
+"topic_name": "Alternative Communication Systems------during disasters"
+},
+{
+"topic_id": 3194,
+"topic_name": "Safe Construction Practices"
+},
+{
+"topic_id": 3195,
+"topic_name": "Sharing Responsibilities"
+}
+]
+}
+]
+},
+{
+"subject_id": 182,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/38.png",
+"subject_name": "English",
+"chapter_details": [
+{
+"chapter_id": 183,
+"chapter_name": "Reading Skills",
+"topic_details": [
+{
+"topic_id": 3291,
+"topic_name": "Reading for Comprehension"
+}
+]
+},
+{
+"chapter_id": 185,
+"chapter_name": "Grammatical Skills",
+"topic_details": [
+{
+"topic_id": 3281,
+"topic_name": "The Article"
+},
+{
+"topic_id": 3285,
+"topic_name": "The Noun"
+},
+{
+"topic_id": 1909,
+"topic_name": "Nominalisation"
+},
+{
+"topic_id": 3286,
+"topic_name": "The Pronoun"
+},
+{
+"topic_id": 1895,
+"topic_name": "Relatives"
+},
+{
+"topic_id": 1899,
+"topic_name": "Auxiliaries"
+},
+{
+"topic_id": 1896,
+"topic_name": "The Verb"
+},
+{
+"topic_id": 3287,
+"topic_name": "The Adjective"
+},
+{
+"topic_id": 3280,
+"topic_name": "The Adverb"
+},
+{
+"topic_id": 1907,
+"topic_name": "Comparison"
+},
+{
+"topic_id": 3279,
+"topic_name": "Future Time Reference"
+},
+{
+"topic_id": 1900,
+"topic_name": "Tenses"
+},
+{
+"topic_id": 3290,
+"topic_name": "The  Sequence of Tenses"
+},
+{
+"topic_id": 1902,
+"topic_name": "Sentence Structure"
+},
+{
+"topic_id": 3283,
+"topic_name": "The Sentence"
+},
+{
+"topic_id": 1903,
+"topic_name": "Subject-Verb Agreement"
+},
+{
+"topic_id": 1897,
+"topic_name": "Prepositions"
+},
+{
+"topic_id": 1898,
+"topic_name": "Connectors"
+},
+{
+"topic_id": 509680,
+"topic_name": "Cohesive Devises"
+},
+{
+"topic_id": 1901,
+"topic_name": "Determiners"
+},
+{
+"topic_id": 1906,
+"topic_name": "Condition, Concession and Contrast"
+},
+{
+"topic_id": 1905,
+"topic_name": "Active and Passive Voice"
+},
+{
+"topic_id": 1904,
+"topic_name": "Reported Speech"
+},
+{
+"topic_id": 3288,
+"topic_name": "The Interjection"
+},
+{
+"topic_id": 3289,
+"topic_name": "Punctuation"
+},
+{
+"topic_id": 3282,
+"topic_name": "Synthesis of Sentences"
+},
+{
+"topic_id": 3284,
+"topic_name": "Transformation of Sentences"
+},
+{
+"topic_id": 3278,
+"topic_name": "Word Formation"
+},
+{
+"topic_id": 326562,
+"topic_name": "Editing"
+},
+{
+"topic_id": 326564,
+"topic_name": "Jumbled Words"
+},
+{
+"topic_id": 326563,
+"topic_name": "Omission"
+},
+{
+"topic_id": 1908,
+"topic_name": "Avoiding Repetition"
+}
+]
+},
+{
+"chapter_id": 217,
+"chapter_name": "Vocabulary Skills",
+"topic_details": [
+{
+"topic_id": 3277,
+"topic_name": "Aids to Vocabulary"
+},
+{
+"topic_id": 3274,
+"topic_name": "Phrasal Verbs"
+},
+{
+"topic_id": 3271,
+"topic_name": "Antonyms & Synonyms"
+},
+{
+"topic_id": 3272,
+"topic_name": "Homophones & Homonyms"
+},
+{
+"topic_id": 3273,
+"topic_name": "Idioms and Proverbs"
+},
+{
+"topic_id": 3276,
+"topic_name": "Figures of Speech"
+},
+{
+"topic_id": 3275,
+"topic_name": "Spellings"
+}
+]
+},
+{
+"chapter_id": 184,
+"chapter_name": "Writing Skills",
+"topic_details": [
+{
+"topic_id": 425174,
+"topic_name": "Notice"
+},
+{
+"topic_id": 326476,
+"topic_name": "Formal Letters"
+},
+{
+"topic_id": 1881,
+"topic_name": "Article Writing"
+},
+{
+"topic_id": 1886,
+"topic_name": "Diary Entry"
+},
+{
+"topic_id": 509682,
+"topic_name": "Dialogue Writing"
+},
+{
+"topic_id": 1891,
+"topic_name": "Story Writing"
+},
+{
+"topic_id": 509681,
+"topic_name": "Descriptive Composition"
+},
+{
+"topic_id": 509683,
+"topic_name": "Debate Writing"
+},
+{
+"topic_id": 509684,
+"topic_name": "Data Interpretation"
+},
+{
+"topic_id": 509685,
+"topic_name": "Note Making and Summary Writing"
+}
+]
+},
+{
+"chapter_id": 565571,
+"chapter_name": "First Flight - Prose",
+"topic_details": [
+{
+"topic_id": 2888,
+"topic_name": "A Letter to God"
+},
+{
+"topic_id": 2891,
+"topic_name": "Nelson Mandela: Long Walk To Freedom"
+},
+{
+"topic_id": 2893,
+"topic_name": "Two Stories about Flying (His First Flight)"
+},
+{
+"topic_id": 2894,
+"topic_name": "Two Stories about Flying (Black Aeroplane)"
+},
+{
+"topic_id": 2897,
+"topic_name": "From the Diary of Anne Frank"
+},
+{
+"topic_id": 2899,
+"topic_name": "The Hundred Dresses-I"
+},
+{
+"topic_id": 2900,
+"topic_name": "The Hundred Dresses-II"
+},
+{
+"topic_id": 2902,
+"topic_name": "Glimpses of India (A Baker from Goa)"
+},
+{
+"topic_id": 2903,
+"topic_name": "Glimpses of India (Coorg)"
+},
+{
+"topic_id": 2904,
+"topic_name": "Glimpses of India (Tea from Assam)"
+},
+{
+"topic_id": 2906,
+"topic_name": "Mijbil the Otter"
+},
+{
+"topic_id": 2908,
+"topic_name": "Madam Rides the Bus"
+},
+{
+"topic_id": 2910,
+"topic_name": "The Sermon at Benares"
+},
+{
+"topic_id": 2912,
+"topic_name": "The Proposal"
+}
+]
+},
+{
+"chapter_id": 565570,
+"chapter_name": "First Flight - Poetry",
+"topic_details": [
+{
+"topic_id": 2889,
+"topic_name": "Dust of Snow"
+},
+{
+"topic_id": 2890,
+"topic_name": "Fire and Ice"
+},
+{
+"topic_id": 2892,
+"topic_name": "A Tiger in the Zoo"
+},
+{
+"topic_id": 2895,
+"topic_name": "How to Tell Wild Animals"
+},
+{
+"topic_id": 2896,
+"topic_name": "The Ball Poem"
+},
+{
+"topic_id": 2898,
+"topic_name": "Amanda"
+},
+{
+"topic_id": 2901,
+"topic_name": "Animals"
+},
+{
+"topic_id": 2905,
+"topic_name": "The Trees"
+},
+{
+"topic_id": 2907,
+"topic_name": "Fog"
+},
+{
+"topic_id": 2909,
+"topic_name": "The Tale of Custard the Dragon"
+},
+{
+"topic_id": 2911,
+"topic_name": "For Anne Gregory"
+}
+]
+},
+{
+"chapter_id": 211,
+"chapter_name": "Footprints Without Feet",
+"topic_details": [
+{
+"topic_id": 2913,
+"topic_name": "A Triumph of Surgery"
+},
+{
+"topic_id": 2914,
+"topic_name": "The Thief's Story"
+},
+{
+"topic_id": 2915,
+"topic_name": "The Midnight Visitor"
+},
+{
+"topic_id": 2916,
+"topic_name": "A Question of Trust"
+},
+{
+"topic_id": 2917,
+"topic_name": "Footprints without Feet"
+},
+{
+"topic_id": 2918,
+"topic_name": "The Making of a Scientist"
+},
+{
+"topic_id": 2919,
+"topic_name": "The Necklace"
+},
+{
+"topic_id": 2920,
+"topic_name": "The Hack Driver"
+},
+{
+"topic_id": 2921,
+"topic_name": "Bholi"
+},
+{
+"topic_id": 2922,
+"topic_name": "The Book That Saved the Earth"
+}
+]
+}
+]
+},
+{
+"subject_id": 557202,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/25962.png",
+"subject_name": "Computer Applications",
+"chapter_details": [
+{
+"chapter_id": 557203,
+"chapter_name": "Introducing Internet",
+"topic_details": [
+{
+"topic_id": 559252,
+"topic_name": "Introducing Internet"
+},
+{
+"topic_id": 559253,
+"topic_name": "Internet Protocols"
+}
+]
+},
+{
+"chapter_id": 557205,
+"chapter_name": "HTML-I: Basic HTML Elements",
+"topic_details": [
+{
+"topic_id": 559257,
+"topic_name": "Writing HTML Documents"
+},
+{
+"topic_id": 559258,
+"topic_name": "Text Formatting Tags"
+},
+{
+"topic_id": 559259,
+"topic_name": "Lists in HTML"
+}
+]
+},
+{
+"chapter_id": 557206,
+"chapter_name": "HTML-II: Images, Links and Tables",
+"topic_details": [
+{
+"topic_id": 559260,
+"topic_name": "Images and Hyperlinks"
+},
+{
+"topic_id": 559261,
+"topic_name": "Tables"
+}
+]
+}
+]
+},
+{
+"subject_id": 206,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/107.png",
+"subject_name": "????? – ?",
+"chapter_details": [
+{
+"chapter_id": 207,
+"chapter_name": "???????-?",
+"topic_details": [
+{
+"topic_id": 3377,
+"topic_name": "????? ???- ??????"
+},
+{
+"topic_id": 3378,
+"topic_name": "????? ???-????????"
+},
+{
+"topic_id": 3379,
+"topic_name": "????? ???-???"
+},
+{
+"topic_id": 3380,
+"topic_name": "????? ???-?????? ??????"
+},
+{
+"topic_id": 3393,
+"topic_name": "????? ???-????????? ???????? '??????'"
+},
+{
+"topic_id": 3381,
+"topic_name": "????? ???-?????????"
+},
+{
+"topic_id": 3382,
+"topic_name": "????? ???-??????????? ?????"
+},
+{
+"topic_id": 3383,
+"topic_name": "????? ???-??????"
+},
+{
+"topic_id": 3384,
+"topic_name": "????? ???-?????? ?????"
+},
+{
+"topic_id": 3385,
+"topic_name": "???? ???-????? ??????"
+},
+{
+"topic_id": 3386,
+"topic_name": "???? ???-???????? ????????"
+},
+{
+"topic_id": 3387,
+"topic_name": "???? ???-?????"
+},
+{
+"topic_id": 3388,
+"topic_name": "???? ???-????????? ???? ???????"
+},
+{
+"topic_id": 3389,
+"topic_name": "???? ???-????? ??????"
+},
+{
+"topic_id": 3390,
+"topic_name": "???? ???-?????? ?????? ????????"
+},
+{
+"topic_id": 3391,
+"topic_name": "???? ???-??????? ?????"
+},
+{
+"topic_id": 3392,
+"topic_name": "???? ???- ???? ???? ?????????"
+},
+{
+"topic_id": 3413,
+"topic_name": "???? ???-???? ?? ????"
+},
+{
+"topic_id": 3414,
+"topic_name": "???? ???-????? ???? ?? ???"
+},
+{
+"topic_id": 3415,
+"topic_name": "???? ???-????-???? ??? ????"
+},
+{
+"topic_id": 3416,
+"topic_name": "???? ???-??? ????? ????? ?????? ?? ????"
+},
+{
+"topic_id": 3417,
+"topic_name": "???? ???-??? ????? ????? ????"
+}
+]
+},
+{
+"chapter_id": 208,
+"chapter_name": "????? ???????-?",
+"topic_details": [
+{
+"topic_id": 2656,
+"topic_name": "????? ????????"
+},
+{
+"topic_id": 2655,
+"topic_name": "????? ???????"
+},
+{
+"topic_id": 2650,
+"topic_name": "??-?????"
+},
+{
+"topic_id": 3412,
+"topic_name": "??"
+},
+{
+"topic_id": 2658,
+"topic_name": "????-????????? ????"
+},
+{
+"topic_id": 2657,
+"topic_name": "????-??????? ????"
+},
+{
+"topic_id": 3409,
+"topic_name": "????-?????"
+},
+{
+"topic_id": 2651,
+"topic_name": "????? ?? ???-???? ?? ?????? ??"
+},
+{
+"topic_id": 206781,
+"topic_name": "????? ?????????"
+},
+{
+"topic_id": 2652,
+"topic_name": "?????"
+},
+{
+"topic_id": 515784,
+"topic_name": "???????? ????"
+},
+{
+"topic_id": 3410,
+"topic_name": "??? ????"
+}
+]
+}
+]
+},
+{
+"subject_id": 203,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/110.png",
+"subject_name": "????? – ?",
+"chapter_details": [
+{
+"chapter_id": 205,
+"chapter_name": "???????-?",
+"topic_details": [
+{
+"topic_id": 2628,
+"topic_name": "????-????"
+},
+{
+"topic_id": 2629,
+"topic_name": "????-??"
+},
+{
+"topic_id": 2630,
+"topic_name": "????-????"
+},
+{
+"topic_id": 2631,
+"topic_name": "????-????????"
+},
+{
+"topic_id": 2632,
+"topic_name": "????- ????? ?????? ??? ????"
+},
+{
+"topic_id": 2633,
+"topic_name": "????-????-???? ???? ???? ??"
+},
+{
+"topic_id": 2634,
+"topic_name": "????-???"
+},
+{
+"topic_id": 2965,
+"topic_name": "????-?? ??? ?? ????"
+},
+{
+"topic_id": 2635,
+"topic_name": "????-?????????"
+},
+{
+"topic_id": 2636,
+"topic_name": "????-??? ???????"
+},
+{
+"topic_id": 2637,
+"topic_name": "????-????? ?? ?? ?????"
+},
+{
+"topic_id": 2638,
+"topic_name": "????-??????-?????? ???"
+},
+{
+"topic_id": 2639,
+"topic_name": "????-????? ??? ?? ???????? ????????"
+},
+{
+"topic_id": 2640,
+"topic_name": "????-??????"
+},
+{
+"topic_id": 2641,
+"topic_name": "????-?? ???? ????? ?? ???? ?? ???? ???? ????"
+},
+{
+"topic_id": 2642,
+"topic_name": "????-???? ??? ???? ????????"
+},
+{
+"topic_id": 2643,
+"topic_name": "????-??????"
+},
+{
+"topic_id": 2644,
+"topic_name": "????-????? ????"
+},
+{
+"topic_id": 288296,
+"topic_name": "????-????? ??-?? ???"
+},
+{
+"topic_id": 2646,
+"topic_name": "????-???? ??????"
+}
+]
+},
+{
+"chapter_id": 204,
+"chapter_name": "????? ???????-?",
+"topic_details": [
+{
+"topic_id": 281526,
+"topic_name": "????? ???????"
+},
+{
+"topic_id": 281525,
+"topic_name": "????? ???????"
+},
+{
+"topic_id": 3421,
+"topic_name": "????????? ????"
+},
+{
+"topic_id": 2596,
+"topic_name": "??????? ????-????? ????"
+},
+{
+"topic_id": 2961,
+"topic_name": "???????? ????"
+},
+{
+"topic_id": 309518,
+"topic_name": "????? ?????"
+},
+{
+"topic_id": 2960,
+"topic_name": "???????? ????"
+},
+{
+"topic_id": 3420,
+"topic_name": "??????? ????"
+},
+{
+"topic_id": 3418,
+"topic_name": "?????? ????"
+},
+{
+"topic_id": 3419,
+"topic_name": "????????? ????"
+},
+{
+"topic_id": 3427,
+"topic_name": "???????"
+},
+{
+"topic_id": 3423,
+"topic_name": "???? ?? ???? ?? ????? ????????"
+},
+{
+"topic_id": 2599,
+"topic_name": "????-??????? ????"
+},
+{
+"topic_id": 2601,
+"topic_name": "????-???????? ????"
+},
+{
+"topic_id": 3425,
+"topic_name": "????-???????? ????"
+},
+{
+"topic_id": 3424,
+"topic_name": "????-????? ????"
+},
+{
+"topic_id": 3426,
+"topic_name": "????-????? ????"
+},
+{
+"topic_id": 2589,
+"topic_name": "????, ?? ?? ????? ??? ????"
+}
+]
+}
+]
+},
+{
+"subject_id": 310768,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/37822.png",
+"subject_name": "??????? ???????",
+"chapter_details": [
+{
+"chapter_id": 565641,
+"chapter_name": "?????? ??? -?",
+"topic_details": [
+{
+"topic_id": 565642,
+"topic_name": "??????????????"
+},
+{
+"topic_id": 565643,
+"topic_name": "????????????? ???"
+},
+{
+"topic_id": 565644,
+"topic_name": "???????? ?????? ?????"
+},
+{
+"topic_id": 565646,
+"topic_name": "???? ???????????"
+}
+]
+}
+]
+},
+{
+"subject_id": 214,
+"subject_Thumbnail": "http://test-www.extramarks.com/images/icons/ess_icons/52.png",
+"subject_name": "??????? : ???????",
+"chapter_details": [
+{
+"chapter_id": 501364,
+"chapter_name": "??????????????"
+},
+{
+"chapter_id": 3135,
+"chapter_name": "?????????? ?????"
+},
+{
+"chapter_id": 3136,
+"chapter_name": "???? ?????"
+},
+{
+"chapter_id": 3137,
+"chapter_name": "????????? ???????-?????????? ??????"
+},
+{
+"chapter_id": 3138,
+"chapter_name": "????????? ???????-????????????? ???????"
+},
+{
+"chapter_id": 3139,
+"chapter_name": "????????????-(???? ????? -?1)"
+},
+{
+"chapter_id": 141609,
+"chapter_name": "??????????? (???? ????? -??)"
+},
+{
+"chapter_id": 3140,
+"chapter_name": "????????????-?????? ??????"
+},
+{
+"chapter_id": 3141,
+"chapter_name": "????????????-?????? ??????"
+},
+{
+"chapter_id": 3142,
+"chapter_name": "?????- ?????????"
+},
+{
+"chapter_id": 3143,
+"chapter_name": "?????- ????????? ?????????? ?"
+},
+{
+"chapter_id": 3144,
+"chapter_name": "?????-????????? ??????? ?"
+},
+{
+"chapter_id": 3145,
+"chapter_name": "?????- ?????????"
+},
+{
+"chapter_id": 206773,
+"chapter_name": "?????????-??????"
+},
+{
+"chapter_id": 3146,
+"chapter_name": "?????????- ????????"
+},
+{
+"chapter_id": 3147,
+"chapter_name": "?????????- ?????? ????????"
+},
+{
+"chapter_id": 3148,
+"chapter_name": "????? ?????"
+},
+{
+"chapter_id": 3149,
+"chapter_name": "???????"
+},
+{
+"chapter_id": 3150,
+"chapter_name": "?????- ??????????"
+},
+{
+"chapter_id": 3152,
+"chapter_name": "?????"
+},
+{
+"chapter_id": 3151,
+"chapter_name": "??? ??????"
+},
+{
+"chapter_id": 3134,
+"chapter_name": "????? ????????"
+}
+]
+}
+]
+}</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Validation_paramvalue is :-  subject_added</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>ExpectedResponse_paramvalue is :-  no</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>ValidationNode is :-</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>SessionID is :- null</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Response Time in ms  :-806</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Status code is:- 200</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Response Status Line is :- HTTP/1.1 200 OK</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Content Type is:-application/json; charset=utf-8</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Content Encoding is:-gzip</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>ActualResponse_paramValue  is :- no</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>15:35:14</td>
+<td class='step-details'>Actual Response Parameter Value is match with Expected Response Parameter Value</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='test-details-wrapper' class='col s7'>
+<div class='card-panel vh100 details-view pin'>
+<h5 class='details-name'></h5>
+<div class='details-container'>
+</div>
+</div>
+</div>
+</div>
+<!-- /tests -->
+
+<!-- categories -->
+<div id='categories-view' class='row hide'>
+<div class='col s5'>
+<div class='card-panel heading'>
+<h5>Categories</h5>
+</div>
+<div class='card-panel filters'>
+<div class='search' alt='Search tests' title='Search tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v vh100'>
+<div class='wrapper'>
+<ul id='cat-collection' class='cat-collection'>
+</ul>
+</div>
+</div>
+</div>
+<div id='cat-details-wrapper' class='col s7'>
+<div class='card-panel vh100 details-view pin'>
+<h5 class='cat-name'></h5>
+<div class='cat-container'>
+</div>
+</div>
+</div>
+</div>
+<!-- /categories -->
+
+<!-- testrunner logs -->
+<div id='testrunner-logs-view' class='row hide'>
+<div class='col s12'>
+<div class='card-panel'>
+<h5>TestRunner Logs</h5>
+</div>
+</div>
+</div>
+<!-- /testrunner logs -->
+
+</div>
+<!-- /container -->
+
+<!-- test dashboard counts setting -->
+<div id='test-count-setting' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Configure Tests Count Setting</h5> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+<label for='childNodes'>Child Tests Only</label> 
+</div> 
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /test dashboard counts setting -->
+
+<!-- filter for step status -->
+<div id='step-status-filter' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Select status</h5> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+<label for='step-dashboard-filter-pass'>Pass</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+<label for='step-dashboard-filter-fail'>Fail</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+<label for='step-dashboard-filter-fatal'>Fatal</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+<label for='step-dashboard-filter-error'>Error</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+<label for='step-dashboard-filter-warning'>Warning</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+<label for='step-dashboard-filter-skip'>Skipped</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+<label for='step-dashboard-filter-info'>Info</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+<label for='step-dashboard-filter-unknown'>Unknown</label> 
+</div>
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /filter for step status -->
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<script src='https://cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js' type='text/javascript' charset='utf-8'></script>
+<script src='http://cdn.rawgit.com/anshooarora/extentreports/005d99e2f2716f6d749c77c65b57ca3c632c35a8/cdn/extent.js' type='text/javascript'></script>
+
+<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+<script>
+
+
+$(document).ready(function() {
+
+});
+
+
+</script>
+</body>
+</html>

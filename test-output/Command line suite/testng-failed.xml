@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.LearningAPI.TestCases.SearchContentbyKeyword_API">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.SearchContentbyKeyword_API -->
+      <class name="com.LearningAPI.TestCases.ProfileUpdateAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.ProfileUpdateAPI -->
+      <class name="com.LearningAPI.TestCases.BoardClassListAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.BoardClassListAPI -->
+      <class name="com.LearningAPI.TestCases.GetMCQQuestionListAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.GetMCQQuestionListAPI -->
+      <class name="com.LearningAPI.TestCases.CountryListAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.CountryListAPI -->
+      <class name="com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI -->
+      <class name="com.LearningAPI.TestCases.GetCityDetail">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.GetCityDetail -->
+      <class name="com.LearningAPI.TestCases.GcmRegistrationAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.GcmRegistrationAPI -->
+      <class name="com.LearningAPI.TestCases.UserSubscriptionList">
+        <methods>
+          <include name="UserSubscriptionList_Test" invocation-numbers="0"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserSubscriptionList -->
+      <class name="com.LearningAPI.TestCases.MySubscriptionsListAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.MySubscriptionsListAPI -->
+      <class name="com.LearningAPI.TestCases.LeaderBoardAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.LeaderBoardAPI -->
+      <class name="com.LearningAPI.TestCases.UserLogStatusAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserLogStatusAPI -->
+      <class name="com.LearningAPI.TestCases.CheckDeviceAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.CheckDeviceAPI -->
+      <class name="com.LearningAPI.TestCases.SubjectWiseProgressReportAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.SubjectWiseProgressReportAPI -->
+      <class name="com.LearningAPI.TestCases.UploadProfileImagesAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UploadProfileImagesAPI -->
+      <class name="com.LearningAPI.TestCases.GetSubjectByPackageId_API">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.GetSubjectByPackageId_API -->
+      <class name="com.LearningAPI.TestCases.UserRegistrationAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserRegistrationAPI -->
+      <class name="com.LearningAPI.TestCases.UserSubscriptionStatusAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserSubscriptionStatusAPI -->
+      <class name="com.LearningAPI.TestCases.AllPackageListAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.AllPackageListAPI -->
+      <class name="com.LearningAPI.TestCases.UserLoginAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserLoginAPI -->
+      <class name="com.LearningAPI.TestCases.UserChatSectionDataAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.UserChatSectionDataAPI -->
+      <class name="com.LearningAPI.TestCases.ChangePasswordAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.ChangePasswordAPI -->
+      <class name="com.LearningAPI.TestCases.IPLocationAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.IPLocationAPI -->
+      <class name="com.LearningAPI.TestCases.ApplyVoucherCodeAPI">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.ApplyVoucherCodeAPI -->
+      <class name="com.LearningAPI.TestCases.QuizQuestionListAPI">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.LearningAPI.TestCases.QuizQuestionListAPI -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

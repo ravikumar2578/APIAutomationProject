@@ -1,0 +1,295 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 01 16:51:22 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31266 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserSubscriptionList.UserSubscriptionList_Test()'><b>UserSubscriptionList_Test</b><br>Test class: com.LearningAPI.TestCases.UserSubscriptionList<br>Parameters: {ExpectedResponseValue=[], user_id=123456, validationNode=, validationParam=board_id, Runmode=Y}</td>
+<td><div><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.util.Map
+	at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+	at com.LearningAPI.TestCases.BaseTest.validationwithnestedArray(BaseTest.java:176)
+	at com.LearningAPI.TestCases.UserSubscriptionList.UserSubscriptionList_Test(UserSubscriptionList.java:83)
+	at com.LearningAPI.TestCases.TestRunner.main(TestRunner.java:19)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace768669591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768669591'><pre>java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.util.Map
+	at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+	at com.LearningAPI.TestCases.BaseTest.validationwithnestedArray(BaseTest.java:176)
+	at com.LearningAPI.TestCases.UserSubscriptionList.UserSubscriptionList_Test(UserSubscriptionList.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at com.LearningAPI.TestCases.TestRunner.main(TestRunner.java:19)
+</pre></div></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserSubscriptionList@73ee04c8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.LearningAPI.TestCases.AllPackageListAPI.AllPackageListAPI_Test()'><b>AllPackageListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.AllPackageListAPI<br>Parameters: {board_id=180, validationNode=category_detail[0], Runmode=Y, class_id=36, ExpectedResponseValue=67, currency=INR, validationParam=id, flag_id=iossubject, user_id=10080212}</td>
+<td></td>
+<td>2</td>
+<td>com.LearningAPI.TestCases.AllPackageListAPI@6a6afff2</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.AllPackageListAPI.AllPackageListAPI_Test()'><b>AllPackageListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.AllPackageListAPI<br>Parameters: {board_id=180, validationNode=category_detail[0], Runmode=Y, class_id=36, ExpectedResponseValue=IOS Package, currency=INR, validationParam=name, flag_id=iossubject, user_id=10080212}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.AllPackageListAPI@6a6afff2</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.ApplyVoucherCodeAPI.ApplyVoucherCodeAPI_Test()'><b>ApplyVoucherCodeAPI_Test</b><br>Test class: com.LearningAPI.TestCases.ApplyVoucherCodeAPI<br>Parameters: {board_id=439, voucher_code=Redeem2019, validationNode=, Runmode=Y, class_id=425766, ExpectedResponseValue=17005, flag=freevoucher, validationParam=response_code, offer_for=ess, user_id=14079428}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.ApplyVoucherCodeAPI@1649b0e6</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.ApplyVoucherCodeAPI.ApplyVoucherCodeAPI_Test()'><b>ApplyVoucherCodeAPI_Test</b><br>Test class: com.LearningAPI.TestCases.ApplyVoucherCodeAPI<br>Parameters: {board_id=439, voucher_code=Redeem2019, validationNode=, Runmode=Y, class_id=425766, ExpectedResponseValue=Invalid Coupon Code!, flag=freevoucher, validationParam=message, offer_for=ess, user_id=14079428}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.ApplyVoucherCodeAPI@1649b0e6</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.BoardClassListAPI.BoardClassListAPI_Test()'><b>BoardClassListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.BoardClassListAPI<br>Parameters: {start=0, all_board_id=0, validationNode=, Runmode=Y, offset=50, ExpectedResponseValue=Something went wrong. Please try again., personalized_topic_status=1, parent_id=284, type=mcq, validationParam=message, parent=subject, user_id=15741742}</td>
+<td></td>
+<td>1</td>
+<td>com.LearningAPI.TestCases.BoardClassListAPI@865dd6</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.CheckDeviceAPI.CheckDeviceAPI_Test()'><b>CheckDeviceAPI_Test</b><br>Test class: com.LearningAPI.TestCases.CheckDeviceAPI<br>Parameters: {ExpectedResponseValue=Device does not exists!, validationNode=, device_id=RZ8M50L0QXY, validationParam=message, Runmode=Y}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.CheckDeviceAPI@3972a855</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.CheckDeviceAPI.CheckDeviceAPI_Test()'><b>CheckDeviceAPI_Test</b><br>Test class: com.LearningAPI.TestCases.CheckDeviceAPI<br>Parameters: {ExpectedResponseValue=21002, validationNode=, device_id=RZ8M50L0QXZ, validationParam=response_code, Runmode=Y}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.CheckDeviceAPI@3972a855</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.CountryListAPI.CountryListAPI_Test()'><b>CountryListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.CountryListAPI<br>Parameters: {ExpectedResponseValue=10001, validationNode=, validationParam=response_code, salt=essa@2015, Runmode=Y, APIKey=  47C7C9F7711308555B400B9D0}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.CountryListAPI@62e7f11d</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.CountryListAPI.CountryListAPI_Test()'><b>CountryListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.CountryListAPI<br>Parameters: {ExpectedResponseValue=success, validationNode=, validationParam=message, salt=, Runmode=Y, APIKey=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.CountryListAPI@62e7f11d</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GcmRegistrationAPI.GcmRegistrationAPI_Test()'><b>GcmRegistrationAPI_Test</b><br>Test class: com.LearningAPI.TestCases.GcmRegistrationAPI<br>Parameters: {reg_id=cIJpfa2uBU0, validationNode=, Runmode=Y, os=APA91bGHJATfrWirnTNk_6qoNRSQsZsbf_M_NC_VQP4MptybNyh0RsCSNEvSjupsvZTnteXAWkRi0he_9tC0YFHNqD_qGp8dCw5_qoaYWoLpvdgOdX4QwV1Kneu20PO0QqTTG0E2Ky8r, app_version=6.0.1:2.0.26.60, ExpectedResponseValue=Invalid action parameters., type=register, validationParam=message, os_version=Android}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.GcmRegistrationAPI@503d687a</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GetCityDetail.GetCityDetail_Test()'><b>GetCityDetail_Test</b><br>Test class: com.LearningAPI.TestCases.GetCityDetail<br>Parameters: {ExpectedResponseValue=success, validationNode=, state_id=, validationParam=message, Runmode=Y, action=city, city_id=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.GetCityDetail@6a370f4</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GetCityDetail.GetCityDetail_Test()'><b>GetCityDetail_Test</b><br>Test class: com.LearningAPI.TestCases.GetCityDetail<br>Parameters: {ExpectedResponseValue=10027, validationNode=, state_id=, validationParam=response_code, Runmode=Y, action=xyz, city_id=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.GetCityDetail@6a370f4</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GetMCQQuestionListAPI.GetMCQQuestionListAPI_Test()'><b>GetMCQQuestionListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.GetMCQQuestionListAPI<br>Parameters: {level=1, board_id=180, test_service_type=mct_question_list, session_id=c3ltpfmt745cajlbhe1rnrs504, validationNode=, Runmode=Y, container_id=1053,1054,1055,1056, ExpectedResponseValue=Force and Laws of Motion, service_id=2297, test=multiple, validationParam=title, user_id=10075915}</td>
+<td></td>
+<td>10</td>
+<td>com.LearningAPI.TestCases.GetMCQQuestionListAPI@2abf4075</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GetSubjectByPackageId_API.GetSubjectByPackageId_API_Test()'><b>GetSubjectByPackageId_API_Test</b><br>Test class: com.LearningAPI.TestCases.GetSubjectByPackageId_API<br>Parameters: {ExpectedResponseValue=Invalid Package, Board/Class is wrong, validationNode=, validationParam=message, Runmode=Y, package_id=33}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.GetSubjectByPackageId_API@770d3326</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.GetSubjectByPackageId_API.GetSubjectByPackageId_API_Test()'><b>GetSubjectByPackageId_API_Test</b><br>Test class: com.LearningAPI.TestCases.GetSubjectByPackageId_API<br>Parameters: {ExpectedResponseValue=no, validationNode=, validationParam=subject_added, Runmode=Y, package_id=440}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.GetSubjectByPackageId_API@770d3326</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.IPLocationAPI.IPLocationAPI_Test()'><b>IPLocationAPI_Test</b><br>Test class: com.LearningAPI.TestCases.IPLocationAPI<br>Parameters: {ExpectedResponseValue=DELHI, validationNode=, validationParam=state, Runmode=Y, IPREFERENCE=India}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.IPLocationAPI@366647c2</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.IPLocationAPI.IPLocationAPI_Test()'><b>IPLocationAPI_Test</b><br>Test class: com.LearningAPI.TestCases.IPLocationAPI<br>Parameters: {ExpectedResponseValue=Kabupaten, validationNode=, validationParam=state, Runmode=Y, IPREFERENCE=Indonesia}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.IPLocationAPI@366647c2</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.LeaderBoardAPI.LeaderBoardAPI_Test()'><b>LeaderBoardAPI_Test</b><br>Test class: com.LearningAPI.TestCases.LeaderBoardAPI<br>Parameters: {board_id=180, validationNode=, action=tp_quiz_challenge_leaderboard, Runmode=Y, class_id=36, ExpectedResponseValue=success, service_id=2310, validationParam=message, user_id=10079106}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.LeaderBoardAPI@4cc8eb05</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.LeaderBoardAPI.LeaderBoardAPI_Test()'><b>LeaderBoardAPI_Test</b><br>Test class: com.LearningAPI.TestCases.LeaderBoardAPI<br>Parameters: {board_id=180, validationNode=, action=tp_quiz_challenge_leaderboard, Runmode=Y, class_id=36, ExpectedResponseValue=10001, service_id=2310, validationParam=response_code, user_id=10079106}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.LeaderBoardAPI@4cc8eb05</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.MySubscriptionsListAPI.MySubscriptionsListAPI_Test()'><b>MySubscriptionsListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.MySubscriptionsListAPI<br>Parameters: {ExpectedResponseValue=You have not subscribed any extramarks package., user_id=67567011, validationNode=, validationParam=message, Runmode=Y}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.MySubscriptionsListAPI@51f116b8</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.ProfileUpdateAPI.ProfileUpdateAPI_Test()'><b>ProfileUpdateAPI_Test</b><br>Test class: com.LearningAPI.TestCases.ProfileUpdateAPI<br>Parameters: {board_id=180, phonecode=+91, name=PramodExtramarks, country_id=99, validationNode=, state_id=, Runmode=Y, class_id=33, city=Gurugram, ExpectedResponseValue=success, postalcode=, validationParam=message, phonenumber=9865329865, school_name=, gender=, user_id=14078530}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.ProfileUpdateAPI@19d481b</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.QuizQuestionListAPI.QuizQuestionListAPI_Test()'><b>QuizQuestionListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.QuizQuestionListAPI<br>Parameters: {level=1, board_id=378, validationNode=, Runmode=Y, container_id=302618, class_id=866, test_type=single, ExpectedResponseValue=Quiz, service_id=21254, validationParam=Services, user_id=1048059}</td>
+<td></td>
+<td>1</td>
+<td>com.LearningAPI.TestCases.QuizQuestionListAPI@1f97cf0d</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.QuizQuestionListAPI.QuizQuestionListAPI_Test()'><b>QuizQuestionListAPI_Test</b><br>Test class: com.LearningAPI.TestCases.QuizQuestionListAPI<br>Parameters: {level=1, board_id=378, validationNode=, Runmode=Y, container_id=302618, class_id=866, test_type=single, ExpectedResponseValue=PHYSICS AND MEASUREMENT, service_id=21254, validationParam=title, user_id=1048059}</td>
+<td></td>
+<td>1</td>
+<td>com.LearningAPI.TestCases.QuizQuestionListAPI@1f97cf0d</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.ChangePasswordAPI.Registration_ChangePasswordAPI_Test()'><b>Registration_ChangePasswordAPI_Test</b><br>Test class: com.LearningAPI.TestCases.ChangePasswordAPI<br>Parameters: {source=android, oldpwd=123, device_id=, validationNode=, operating_system_version=, action=change_password, Runmode=Y, ExpectedResponseValue=Invalid action parameters., newpwd=1234, app_name=LearningApp, app_version=, validationParam=message, user_id=8527124589}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.ChangePasswordAPI@4da4253</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.SearchContentbyKeyword_API.SearchContentbyKeyword_API_Test()'><b>SearchContentbyKeyword_API_Test</b><br>Test class: com.LearningAPI.TestCases.SearchContentbyKeyword_API<br>Parameters: {board_id=180, start=0, validationNode=results.responseHeader, action=keyword, Runmode=Y, offset=100, class_id=36, ExpectedResponseValue=0, service_id=, subject_id=, type=, validationParam=status, user_id=14077155, text=PHYSICAL WORLD, content_id=, chapter_id=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.SearchContentbyKeyword_API@140c9f39</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.SubjectWiseProgressReportAPI.SubjectWiseProgressReportAPI_Test()'><b>SubjectWiseProgressReportAPI_Test</b><br>Test class: com.LearningAPI.TestCases.SubjectWiseProgressReportAPI<br>Parameters: {board_id=180, validationNode=brief_report.statics.rata_rata_user, Runmode=Y, class_id=37, ExpectedResponseValue=3.75, is_new_app=1, validationParam=syllabus_coverage, user_id=10080212, report_type=student_progress}</td>
+<td></td>
+<td>1</td>
+<td>com.LearningAPI.TestCases.SubjectWiseProgressReportAPI@4d910fd6</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UploadProfileImagesAPI.UploadProfileImagesAPI_Test()'><b>UploadProfileImagesAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UploadProfileImagesAPI<br>Parameters: {board_id=, user_type=student, validationNode=, action=updateprofilepic, user_display_name=Sudhakar, Runmode=Y, class_id=, ExpectedResponseValue=Failed! User's profle pic is not uplaoded succesfully, validationParam=message, user_id=10867212}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UploadProfileImagesAPI@26275bef</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserChatSectionDataAPI.UserChatSectionDataAPI_Test()'><b>UserChatSectionDataAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserChatSectionDataAPI<br>Parameters: {seek_time=1000, validationNode=, action=submit_seek_details, Runmode=Y, animation_id=991916, ExpectedResponseValue=10001, service_id=2270, validationParam=response_code, user_id=10080212}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserChatSectionDataAPI@7690781</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserChatSectionDataAPI.UserChatSectionDataAPI_Test()'><b>UserChatSectionDataAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserChatSectionDataAPI<br>Parameters: {seek_time=1000, validationNode=, action=submit_seek_details, Runmode=Y, animation_id=991916, ExpectedResponseValue=success, service_id=2270, validationParam=message, user_id=10080212}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserChatSectionDataAPI@7690781</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserLogStatusAPI.UserLogStatusAPI_Test()'><b>UserLogStatusAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserLogStatusAPI<br>Parameters: {longitude=, app_type=, validationNode=, Runmode=Y, 0.0=, platform_type=, ExpectedResponseValue=Invalid action parameters., mode=, app_version=, validationParam=message, latitude=, log_type=app_invoke, user_id=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserLogStatusAPI@3246fb96</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserLoginAPI.UserLoginAPI_Test()'><b>UserLoginAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserLoginAPI<br>Parameters: {longitude=, access_type=, accessId=, validationNode=, action=login, Runmode=Y, email_address=7011541369, ExpectedResponseValue=Invalid Username or password., validationParam=message, latitude=, password=123456}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserLoginAPI@77eca502</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI.UserRegistration_ForgotPasswordAPI_Test()'><b>UserRegistration_ForgotPasswordAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI<br>Parameters: {otp_code=976774, validationNode=, action=forgot_password, Runmode=Y, ExpectedResponseValue=success, newpwd=12345678, type=info, validationParam=message, value=7011541366, user_id=14079670}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI@2e222612</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserRegistrationAPI.UserRegistration_Test()'><b>UserRegistration_Test</b><br>Test class: com.LearningAPI.TestCases.UserRegistrationAPI<br>Parameters: {access_type=, name=NewUser, mobile_nu=9876789872, accessId=, device_id=cf2fe7a82cf6a76c, validationNode=, action=registration, Runmode=Y, email_address=, ExpectedResponseValue=This Mobile No. is already registered with us, please sign in., AlreadyResiteredExpectedResponseValue=This Mobile No. is already registered with us, please sign in., validationParam=message, password=}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserRegistrationAPI@61386958</td></tr>
+<tr>
+<td title='com.LearningAPI.TestCases.UserSubscriptionStatusAPI.UserSubscriptionStatusAPI_Test()'><b>UserSubscriptionStatusAPI_Test</b><br>Test class: com.LearningAPI.TestCases.UserSubscriptionStatusAPI<br>Parameters: {ExpectedResponseValue=7 Days Registration Pack, user_id=123456, validationNode=, validationParam=package_name, Runmode=Y}</td>
+<td></td>
+<td>0</td>
+<td>com.LearningAPI.TestCases.UserSubscriptionStatusAPI@7671cb68</td></tr>
+</table><p>
+</body>
+</html>

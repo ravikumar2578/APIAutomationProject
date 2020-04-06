@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="35" passed="34">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="230079" started-at="2020-02-07T10:19:40Z" finished-at="2020-02-07T10:23:30Z">
+    <groups>
+    </groups>
+    <test name="IPLocationTest" duration-ms="65203" started-at="2020-02-07T10:19:40Z" finished-at="2020-02-07T10:20:45Z">
+      <class name="com.LearningAPI.TestCases.IPLocationAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="init" is-config="true" duration-ms="228" started-at="2020-02-07T15:49:40Z" finished-at="2020-02-07T15:49:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="IPLocationAPI_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="IPLocationAPI_Test" duration-ms="30593" started-at="2020-02-07T15:49:40Z" data-provider="getData" finished-at="2020-02-07T15:50:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=DELHI, validationNode=, validationParam=state, Runmode=Y, IPREFERENCE=India}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IPLocationAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="quit" is-config="true" duration-ms="608" started-at="2020-02-07T15:50:11Z" finished-at="2020-02-07T15:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="init" is-config="true" duration-ms="4" started-at="2020-02-07T15:50:11Z" finished-at="2020-02-07T15:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="IPLocationAPI_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="IPLocationAPI_Test" duration-ms="33430" started-at="2020-02-07T15:50:11Z" data-provider="getData" finished-at="2020-02-07T15:50:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=Kabupaten, validationNode=, validationParam=state, Runmode=Y, IPREFERENCE=Indonesia}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IPLocationAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.IPLocationAPI@1e4d3ce5]" name="quit" is-config="true" duration-ms="114" started-at="2020-02-07T15:50:45Z" finished-at="2020-02-07T15:50:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.IPLocationAPI -->
+    </test> <!-- IPLocationTest -->
+    <test name="GetCityDetailTest" duration-ms="3650" started-at="2020-02-07T10:20:45Z" finished-at="2020-02-07T10:20:49Z">
+      <class name="com.LearningAPI.TestCases.GetCityDetail">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:50:45Z" finished-at="2020-02-07T15:50:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GetCityDetail_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="GetCityDetail_Test" duration-ms="3110" started-at="2020-02-07T15:50:45Z" data-provider="getData" finished-at="2020-02-07T15:50:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=success, validationNode=, state_id=, validationParam=message, Runmode=Y, action=city, city_id=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityDetail_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="quit" is-config="true" duration-ms="82" started-at="2020-02-07T15:50:48Z" finished-at="2020-02-07T15:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="init" is-config="true" duration-ms="4" started-at="2020-02-07T15:50:48Z" finished-at="2020-02-07T15:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GetCityDetail_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="GetCityDetail_Test" duration-ms="272" started-at="2020-02-07T15:50:48Z" data-provider="getData" finished-at="2020-02-07T15:50:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=10027, validationNode=, state_id=, validationParam=response_code, Runmode=Y, action=xyz, city_id=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetCityDetail_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GetCityDetail@68034211]" name="quit" is-config="true" duration-ms="89" started-at="2020-02-07T15:50:49Z" finished-at="2020-02-07T15:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.GetCityDetail -->
+    </test> <!-- GetCityDetailTest -->
+    <test name="CountryListTest" duration-ms="3635" started-at="2020-02-07T10:20:49Z" finished-at="2020-02-07T10:20:52Z">
+      <class name="com.LearningAPI.TestCases.CountryListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:50:49Z" finished-at="2020-02-07T15:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CountryListAPI_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="CountryListAPI_Test" duration-ms="495" started-at="2020-02-07T15:50:49Z" data-provider="getData" finished-at="2020-02-07T15:50:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=10001, validationNode=, validationParam=response_code, salt=essa@2015, Runmode=Y, APIKey=  47C7C9F7711308555B400B9D0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="quit" is-config="true" duration-ms="77" started-at="2020-02-07T15:50:49Z" finished-at="2020-02-07T15:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:50:49Z" finished-at="2020-02-07T15:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CountryListAPI_Test(java.util.Hashtable)[pri:1, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="CountryListAPI_Test" duration-ms="2875" started-at="2020-02-07T15:50:49Z" data-provider="getData" finished-at="2020-02-07T15:50:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=success, validationNode=, validationParam=message, salt=, Runmode=Y, APIKey=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.CountryListAPI@68f1b17f]" name="quit" is-config="true" duration-ms="99" started-at="2020-02-07T15:50:52Z" finished-at="2020-02-07T15:50:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.CountryListAPI -->
+    </test> <!-- CountryListTest -->
+    <test name="CheckDeviceTest" duration-ms="1982" started-at="2020-02-07T10:20:52Z" finished-at="2020-02-07T10:20:54Z">
+      <class name="com.LearningAPI.TestCases.CheckDeviceAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="init" is-config="true" duration-ms="8" started-at="2020-02-07T15:50:52Z" finished-at="2020-02-07T15:50:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CheckDeviceAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="CheckDeviceAPI_Test" duration-ms="1512" started-at="2020-02-07T15:50:52Z" data-provider="getData" finished-at="2020-02-07T15:50:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=Device does not exists!, validationNode=, device_id=RZ8M50L0QXY, validationParam=message, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDeviceAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="quit" is-config="true" duration-ms="64" started-at="2020-02-07T15:50:54Z" finished-at="2020-02-07T15:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="init" is-config="true" duration-ms="3" started-at="2020-02-07T15:50:54Z" finished-at="2020-02-07T15:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="CheckDeviceAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="CheckDeviceAPI_Test" duration-ms="235" started-at="2020-02-07T15:50:54Z" data-provider="getData" finished-at="2020-02-07T15:50:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=21002, validationNode=, device_id=RZ8M50L0QXZ, validationParam=response_code, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDeviceAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.CheckDeviceAPI@1b8a29df]" name="quit" is-config="true" duration-ms="90" started-at="2020-02-07T15:50:54Z" finished-at="2020-02-07T15:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.CheckDeviceAPI -->
+    </test> <!-- CheckDeviceTest -->
+    <test name="CheckUserRegistrationTest" duration-ms="76262" started-at="2020-02-07T10:20:54Z" finished-at="2020-02-07T10:22:11Z">
+      <class name="com.LearningAPI.TestCases.UserRegistrationAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserRegistrationAPI@7c51f34b]" name="init" is-config="true" duration-ms="8" started-at="2020-02-07T15:50:55Z" finished-at="2020-02-07T15:50:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserRegistration_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserRegistrationAPI@7c51f34b]" name="UserRegistration_Test" duration-ms="76051" started-at="2020-02-07T15:50:55Z" data-provider="getData" finished-at="2020-02-07T15:52:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{access_type=, name=NewUser, mobile_nu=9876789872, accessId=, device_id=cf2fe7a82cf6a76c, validationNode=, action=registration, Runmode=Y, email_address=, ExpectedResponseValue=This Mobile No. is already registered with us, please sign in., AlreadyResiteredExpectedResponseValue=This Mobile No. is already registered with us, please sign in., validationParam=message, password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistration_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserRegistrationAPI@7c51f34b]" name="quit" is-config="true" duration-ms="89" started-at="2020-02-07T15:52:11Z" finished-at="2020-02-07T15:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserRegistrationAPI -->
+    </test> <!-- CheckUserRegistrationTest -->
+    <test name="UserLogStatusTest" duration-ms="1176" started-at="2020-02-07T10:22:11Z" finished-at="2020-02-07T10:22:12Z">
+      <class name="com.LearningAPI.TestCases.UserLogStatusAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserLogStatusAPI@67b9b51a]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:11Z" finished-at="2020-02-07T15:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserLogStatusAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserLogStatusAPI@67b9b51a]" name="UserLogStatusAPI_Test" duration-ms="1062" started-at="2020-02-07T15:52:11Z" data-provider="getData" finished-at="2020-02-07T15:52:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{longitude=, app_type=, validationNode=, Runmode=Y, 0.0=, platform_type=, ExpectedResponseValue=Invalid action parameters., mode=, app_version=, validationParam=message, latitude=, log_type=app_invoke, user_id=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogStatusAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserLogStatusAPI@67b9b51a]" name="quit" is-config="true" duration-ms="57" started-at="2020-02-07T15:52:12Z" finished-at="2020-02-07T15:52:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserLogStatusAPI -->
+    </test> <!-- UserLogStatusTest -->
+    <test name="UserRegistration_ForgotPasswordTest" duration-ms="1899" started-at="2020-02-07T10:22:12Z" finished-at="2020-02-07T10:22:14Z">
+      <class name="com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI@4032d386]" name="init" is-config="true" duration-ms="8" started-at="2020-02-07T15:52:12Z" finished-at="2020-02-07T15:52:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserRegistration_ForgotPasswordAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI@4032d386]" name="UserRegistration_ForgotPasswordAPI_Test" duration-ms="1767" started-at="2020-02-07T15:52:12Z" data-provider="getData" finished-at="2020-02-07T15:52:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{otp_code=976774, validationNode=, action=forgot_password, Runmode=Y, ExpectedResponseValue=success, newpwd=12345678, type=info, validationParam=message, value=7011541366, user_id=14079670}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistration_ForgotPasswordAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI@4032d386]" name="quit" is-config="true" duration-ms="66" started-at="2020-02-07T15:52:14Z" finished-at="2020-02-07T15:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserRegistration_ForgotPasswordAPI -->
+    </test> <!-- UserRegistration_ForgotPasswordTest -->
+    <test name="ChangePasswordTest" duration-ms="8130" started-at="2020-02-07T10:22:14Z" finished-at="2020-02-07T10:22:22Z">
+      <class name="com.LearningAPI.TestCases.ChangePasswordAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.ChangePasswordAPI@3eb81efb]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:14Z" finished-at="2020-02-07T15:52:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="Registration_ChangePasswordAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.ChangePasswordAPI@3eb81efb]" name="Registration_ChangePasswordAPI_Test" duration-ms="8000" started-at="2020-02-07T15:52:14Z" data-provider="getData" finished-at="2020-02-07T15:52:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{source=android, oldpwd=123, device_id=, validationNode=, operating_system_version=, action=change_password, Runmode=Y, ExpectedResponseValue=Invalid action parameters., newpwd=1234, app_name=LearningApp, app_version=, validationParam=message, user_id=8527124589}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration_ChangePasswordAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.ChangePasswordAPI@3eb81efb]" name="quit" is-config="true" duration-ms="68" started-at="2020-02-07T15:52:22Z" finished-at="2020-02-07T15:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.ChangePasswordAPI -->
+    </test> <!-- ChangePasswordTest -->
+    <test name="GcmRegistartionTest" duration-ms="668" started-at="2020-02-07T10:22:22Z" finished-at="2020-02-07T10:22:23Z">
+      <class name="com.LearningAPI.TestCases.GcmRegistrationAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GcmRegistrationAPI@1f75a668]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:22Z" finished-at="2020-02-07T15:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GcmRegistrationAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.GcmRegistrationAPI@1f75a668]" name="GcmRegistrationAPI_Test" duration-ms="486" started-at="2020-02-07T15:52:22Z" data-provider="getData" finished-at="2020-02-07T15:52:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{reg_id=cIJpfa2uBU0, validationNode=, Runmode=Y, os=APA91bGHJATfrWirnTNk_6qoNRSQsZsbf_M_NC_VQP4MptybNyh0RsCSNEvSjupsvZTnteXAWkRi0he_9tC0YFHNqD_qGp8dCw5_qoaYWoLpvdgOdX4QwV1Kneu20PO0QqTTG0E2Ky8r, app_version=6.0.1:2.0.26.60, ExpectedResponseValue=Invalid action parameters., type=register, validationParam=message, os_version=Android}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GcmRegistrationAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GcmRegistrationAPI@1f75a668]" name="quit" is-config="true" duration-ms="115" started-at="2020-02-07T15:52:23Z" finished-at="2020-02-07T15:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.GcmRegistrationAPI -->
+    </test> <!-- GcmRegistartionTest -->
+    <test name="UserLoginTest" duration-ms="387" started-at="2020-02-07T10:22:23Z" finished-at="2020-02-07T10:22:24Z">
+      <class name="com.LearningAPI.TestCases.UserLoginAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserLoginAPI@1a72a540]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:52:23Z" finished-at="2020-02-07T15:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserLoginAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserLoginAPI@1a72a540]" name="UserLoginAPI_Test" duration-ms="277" started-at="2020-02-07T15:52:23Z" data-provider="getData" finished-at="2020-02-07T15:52:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{longitude=, access_type=, accessId=, validationNode=, action=login, Runmode=Y, email_address=7011541369, ExpectedResponseValue=Invalid Username or password., validationParam=message, latitude=, password=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserLoginAPI@1a72a540]" name="quit" is-config="true" duration-ms="52" started-at="2020-02-07T15:52:24Z" finished-at="2020-02-07T15:52:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserLoginAPI -->
+    </test> <!-- UserLoginTest -->
+    <test name="UserSubscriptionListTest" duration-ms="3497" started-at="2020-02-07T10:22:24Z" finished-at="2020-02-07T10:22:27Z">
+      <class name="com.LearningAPI.TestCases.UserSubscriptionList">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionList@19e7a160]" name="init" is-config="true" duration-ms="9" started-at="2020-02-07T15:52:24Z" finished-at="2020-02-07T15:52:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="UserSubscriptionList_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionList@19e7a160]" name="UserSubscriptionList_Test" duration-ms="3197" started-at="2020-02-07T15:52:24Z" data-provider="getData" finished-at="2020-02-07T15:52:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=[], user_id=123456, validationNode=, validationParam=board_id, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[java.util.ArrayList cannot be cast to java.util.Map]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: java.util.ArrayList cannot be cast to java.util.Map
+	at io.restassured.path.json.JsonPath.getMap(JsonPath.java:420)
+	at com.LearningAPI.TestCases.BaseTest.validationwithnestedArray(BaseTest.java:176)
+	at com.LearningAPI.TestCases.UserSubscriptionList.UserSubscriptionList_Test(UserSubscriptionList.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserSubscriptionList_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionList@19e7a160]" name="quit" is-config="true" duration-ms="97" started-at="2020-02-07T15:52:27Z" finished-at="2020-02-07T15:52:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserSubscriptionList -->
+    </test> <!-- UserSubscriptionListTest -->
+    <test name="UserSubscriptionStatusTest" duration-ms="609" started-at="2020-02-07T10:22:27Z" finished-at="2020-02-07T10:22:28Z">
+      <class name="com.LearningAPI.TestCases.UserSubscriptionStatusAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionStatusAPI@6aa61224]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:52:28Z" finished-at="2020-02-07T15:52:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserSubscriptionStatusAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionStatusAPI@6aa61224]" name="UserSubscriptionStatusAPI_Test" duration-ms="475" started-at="2020-02-07T15:52:28Z" data-provider="getData" finished-at="2020-02-07T15:52:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=7 Days Registration Pack, user_id=123456, validationNode=, validationParam=package_name, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserSubscriptionStatusAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserSubscriptionStatusAPI@6aa61224]" name="quit" is-config="true" duration-ms="75" started-at="2020-02-07T15:52:28Z" finished-at="2020-02-07T15:52:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserSubscriptionStatusAPI -->
+    </test> <!-- UserSubscriptionStatusTest -->
+    <test name="UploadProfileImagesTest" duration-ms="687" started-at="2020-02-07T10:22:28Z" finished-at="2020-02-07T10:22:29Z">
+      <class name="com.LearningAPI.TestCases.UploadProfileImagesAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UploadProfileImagesAPI@68f4865]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:28Z" finished-at="2020-02-07T15:52:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UploadProfileImagesAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UploadProfileImagesAPI@68f4865]" name="UploadProfileImagesAPI_Test" duration-ms="540" started-at="2020-02-07T15:52:28Z" data-provider="getData" finished-at="2020-02-07T15:52:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=, user_type=student, validationNode=, action=updateprofilepic, user_display_name=Sudhakar, Runmode=Y, class_id=, ExpectedResponseValue=Failed! User's profle pic is not uplaoded succesfully, validationParam=message, user_id=10867212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadProfileImagesAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UploadProfileImagesAPI@68f4865]" name="quit" is-config="true" duration-ms="100" started-at="2020-02-07T15:52:29Z" finished-at="2020-02-07T15:52:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UploadProfileImagesAPI -->
+    </test> <!-- UploadProfileImagesTest -->
+    <test name="SubjectWiseProgressReportTest" duration-ms="3345" started-at="2020-02-07T10:22:29Z" finished-at="2020-02-07T10:22:32Z">
+      <class name="com.LearningAPI.TestCases.SubjectWiseProgressReportAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.SubjectWiseProgressReportAPI@b978d10]" name="init" is-config="true" duration-ms="4" started-at="2020-02-07T15:52:29Z" finished-at="2020-02-07T15:52:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="SubjectWiseProgressReportAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.SubjectWiseProgressReportAPI@b978d10]" name="SubjectWiseProgressReportAPI_Test" duration-ms="3225" started-at="2020-02-07T15:52:29Z" data-provider="getData" finished-at="2020-02-07T15:52:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, validationNode=brief_report.statics.rata_rata_user, Runmode=Y, class_id=37, ExpectedResponseValue=3.75, is_new_app=1, validationParam=syllabus_coverage, user_id=10080212, report_type=student_progress}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubjectWiseProgressReportAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.SubjectWiseProgressReportAPI@b978d10]" name="quit" is-config="true" duration-ms="70" started-at="2020-02-07T15:52:32Z" finished-at="2020-02-07T15:52:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.SubjectWiseProgressReportAPI -->
+    </test> <!-- SubjectWiseProgressReportTest -->
+    <test name="BoardClassListTest" duration-ms="22256" started-at="2020-02-07T10:22:33Z" finished-at="2020-02-07T10:22:55Z">
+      <class name="com.LearningAPI.TestCases.BoardClassListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.BoardClassListAPI@1672fe87]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:33Z" finished-at="2020-02-07T15:52:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="BoardClassListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.BoardClassListAPI@1672fe87]" name="BoardClassListAPI_Test" duration-ms="22083" started-at="2020-02-07T15:52:33Z" data-provider="getData" finished-at="2020-02-07T15:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{start=0, all_board_id=0, validationNode=, Runmode=Y, offset=50, ExpectedResponseValue=Something went wrong. Please try again., personalized_topic_status=1, parent_id=284, type=mcq, validationParam=message, parent=subject, user_id=15741742}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BoardClassListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.BoardClassListAPI@1672fe87]" name="quit" is-config="true" duration-ms="110" started-at="2020-02-07T15:52:55Z" finished-at="2020-02-07T15:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.BoardClassListAPI -->
+    </test> <!-- BoardClassListTest -->
+    <test name="UserChatSectionDataTest" duration-ms="909" started-at="2020-02-07T10:22:55Z" finished-at="2020-02-07T10:22:56Z">
+      <class name="com.LearningAPI.TestCases.UserChatSectionDataAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:52:55Z" finished-at="2020-02-07T15:52:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserChatSectionDataAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="UserChatSectionDataAPI_Test" duration-ms="223" started-at="2020-02-07T15:52:55Z" data-provider="getData" finished-at="2020-02-07T15:52:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{seek_time=1000, validationNode=, action=submit_seek_details, Runmode=Y, animation_id=991916, ExpectedResponseValue=10001, service_id=2270, validationParam=response_code, user_id=10080212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserChatSectionDataAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="quit" is-config="true" duration-ms="85" started-at="2020-02-07T15:52:55Z" finished-at="2020-02-07T15:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:56Z" finished-at="2020-02-07T15:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="UserChatSectionDataAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="UserChatSectionDataAPI_Test" duration-ms="450" started-at="2020-02-07T15:52:56Z" data-provider="getData" finished-at="2020-02-07T15:52:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{seek_time=1000, validationNode=, action=submit_seek_details, Runmode=Y, animation_id=991916, ExpectedResponseValue=success, service_id=2270, validationParam=message, user_id=10080212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserChatSectionDataAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.UserChatSectionDataAPI@6bf08014]" name="quit" is-config="true" duration-ms="92" started-at="2020-02-07T15:52:56Z" finished-at="2020-02-07T15:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.UserChatSectionDataAPI -->
+    </test> <!-- UserChatSectionDataTest -->
+    <test name="AllPackageListTest" duration-ms="1046" started-at="2020-02-07T10:22:56Z" finished-at="2020-02-07T10:22:57Z">
+      <class name="com.LearningAPI.TestCases.AllPackageListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="init" is-config="true" duration-ms="7" started-at="2020-02-07T15:52:56Z" finished-at="2020-02-07T15:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="AllPackageListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="AllPackageListAPI_Test" duration-ms="396" started-at="2020-02-07T15:52:56Z" data-provider="getData" finished-at="2020-02-07T15:52:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, validationNode=category_detail[0], Runmode=Y, class_id=36, ExpectedResponseValue=67, currency=INR, validationParam=id, flag_id=iossubject, user_id=10080212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllPackageListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="quit" is-config="true" duration-ms="100" started-at="2020-02-07T15:52:57Z" finished-at="2020-02-07T15:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:57Z" finished-at="2020-02-07T15:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="AllPackageListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="AllPackageListAPI_Test" duration-ms="370" started-at="2020-02-07T15:52:57Z" data-provider="getData" finished-at="2020-02-07T15:52:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, validationNode=category_detail[0], Runmode=Y, class_id=36, ExpectedResponseValue=IOS Package, currency=INR, validationParam=name, flag_id=iossubject, user_id=10080212}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllPackageListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.AllPackageListAPI@5082d622]" name="quit" is-config="true" duration-ms="106" started-at="2020-02-07T15:52:57Z" finished-at="2020-02-07T15:52:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.AllPackageListAPI -->
+    </test> <!-- AllPackageListTest -->
+    <test name="GetSubjectByPackageIdTest" duration-ms="8090" started-at="2020-02-07T10:22:58Z" finished-at="2020-02-07T10:23:06Z">
+      <class name="com.LearningAPI.TestCases.GetSubjectByPackageId_API">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:52:58Z" finished-at="2020-02-07T15:52:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GetSubjectByPackageId_API_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="GetSubjectByPackageId_API_Test" duration-ms="6973" started-at="2020-02-07T15:52:58Z" data-provider="getData" finished-at="2020-02-07T15:53:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=Invalid Package, Board/Class is wrong, validationNode=, validationParam=message, Runmode=Y, package_id=33}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSubjectByPackageId_API_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="quit" is-config="true" duration-ms="77" started-at="2020-02-07T15:53:05Z" finished-at="2020-02-07T15:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="init" is-config="true" duration-ms="3" started-at="2020-02-07T15:53:05Z" finished-at="2020-02-07T15:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GetSubjectByPackageId_API_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="GetSubjectByPackageId_API_Test" duration-ms="819" started-at="2020-02-07T15:53:05Z" data-provider="getData" finished-at="2020-02-07T15:53:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=no, validationNode=, validationParam=subject_added, Runmode=Y, package_id=440}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSubjectByPackageId_API_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GetSubjectByPackageId_API@6057aebb]" name="quit" is-config="true" duration-ms="167" started-at="2020-02-07T15:53:05Z" finished-at="2020-02-07T15:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.GetSubjectByPackageId_API -->
+    </test> <!-- GetSubjectByPackageIdTest -->
+    <test name="MySubscriptionsListTest" duration-ms="430" started-at="2020-02-07T10:23:06Z" finished-at="2020-02-07T10:23:06Z">
+      <class name="com.LearningAPI.TestCases.MySubscriptionsListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.MySubscriptionsListAPI@7d898981]" name="init" is-config="true" duration-ms="3" started-at="2020-02-07T15:53:06Z" finished-at="2020-02-07T15:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="MySubscriptionsListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.MySubscriptionsListAPI@7d898981]" name="MySubscriptionsListAPI_Test" duration-ms="313" started-at="2020-02-07T15:53:06Z" data-provider="getData" finished-at="2020-02-07T15:53:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResponseValue=You have not subscribed any extramarks package., user_id=67567011, validationNode=, validationParam=message, Runmode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MySubscriptionsListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.MySubscriptionsListAPI@7d898981]" name="quit" is-config="true" duration-ms="79" started-at="2020-02-07T15:53:06Z" finished-at="2020-02-07T15:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.MySubscriptionsListAPI -->
+    </test> <!-- MySubscriptionsListTest -->
+    <test name="QuizQuestionListTest" duration-ms="6556" started-at="2020-02-07T10:23:07Z" finished-at="2020-02-07T10:23:13Z">
+      <class name="com.LearningAPI.TestCases.QuizQuestionListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:53:07Z" finished-at="2020-02-07T15:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="QuizQuestionListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="QuizQuestionListAPI_Test" duration-ms="1844" started-at="2020-02-07T15:53:07Z" data-provider="getData" finished-at="2020-02-07T15:53:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{level=1, board_id=378, validationNode=, Runmode=Y, container_id=302618, class_id=866, test_type=single, ExpectedResponseValue=Quiz, service_id=21254, validationParam=Services, user_id=1048059}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuizQuestionListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="quit" is-config="true" duration-ms="140" started-at="2020-02-07T15:53:08Z" finished-at="2020-02-07T15:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="init" is-config="true" duration-ms="4" started-at="2020-02-07T15:53:09Z" finished-at="2020-02-07T15:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="QuizQuestionListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="QuizQuestionListAPI_Test" duration-ms="4437" started-at="2020-02-07T15:53:09Z" data-provider="getData" finished-at="2020-02-07T15:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{level=1, board_id=378, validationNode=, Runmode=Y, container_id=302618, class_id=866, test_type=single, ExpectedResponseValue=PHYSICS AND MEASUREMENT, service_id=21254, validationParam=title, user_id=1048059}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuizQuestionListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.QuizQuestionListAPI@409c54f]" name="quit" is-config="true" duration-ms="75" started-at="2020-02-07T15:53:13Z" finished-at="2020-02-07T15:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.QuizQuestionListAPI -->
+    </test> <!-- QuizQuestionListTest -->
+    <test name="LeaderBoardTest" duration-ms="1623" started-at="2020-02-07T10:23:13Z" finished-at="2020-02-07T10:23:15Z">
+      <class name="com.LearningAPI.TestCases.LeaderBoardAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:53:13Z" finished-at="2020-02-07T15:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="LeaderBoardAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="LeaderBoardAPI_Test" duration-ms="554" started-at="2020-02-07T15:53:13Z" data-provider="getData" finished-at="2020-02-07T15:53:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, validationNode=, action=tp_quiz_challenge_leaderboard, Runmode=Y, class_id=36, ExpectedResponseValue=success, service_id=2310, validationParam=message, user_id=10079106}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeaderBoardAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="quit" is-config="true" duration-ms="69" started-at="2020-02-07T15:53:14Z" finished-at="2020-02-07T15:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="init" is-config="true" duration-ms="3" started-at="2020-02-07T15:53:14Z" finished-at="2020-02-07T15:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="LeaderBoardAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="LeaderBoardAPI_Test" duration-ms="836" started-at="2020-02-07T15:53:14Z" data-provider="getData" finished-at="2020-02-07T15:53:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, validationNode=, action=tp_quiz_challenge_leaderboard, Runmode=Y, class_id=36, ExpectedResponseValue=10001, service_id=2310, validationParam=response_code, user_id=10079106}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeaderBoardAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.LeaderBoardAPI@7b8b43c7]" name="quit" is-config="true" duration-ms="101" started-at="2020-02-07T15:53:15Z" finished-at="2020-02-07T15:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.LeaderBoardAPI -->
+    </test> <!-- LeaderBoardTest -->
+    <test name="ApplyVoucherCodeTest" duration-ms="1053" started-at="2020-02-07T10:23:15Z" finished-at="2020-02-07T10:23:16Z">
+      <class name="com.LearningAPI.TestCases.ApplyVoucherCodeAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="init" is-config="true" duration-ms="3" started-at="2020-02-07T15:53:15Z" finished-at="2020-02-07T15:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ApplyVoucherCodeAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="ApplyVoucherCodeAPI_Test" duration-ms="580" started-at="2020-02-07T15:53:15Z" data-provider="getData" finished-at="2020-02-07T15:53:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=439, voucher_code=Redeem2019, validationNode=, Runmode=Y, class_id=425766, ExpectedResponseValue=17005, flag=freevoucher, validationParam=response_code, offer_for=ess, user_id=14079428}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyVoucherCodeAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="quit" is-config="true" duration-ms="101" started-at="2020-02-07T15:53:16Z" finished-at="2020-02-07T15:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="init" is-config="true" duration-ms="5" started-at="2020-02-07T15:53:16Z" finished-at="2020-02-07T15:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ApplyVoucherCodeAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="ApplyVoucherCodeAPI_Test" duration-ms="239" started-at="2020-02-07T15:53:16Z" data-provider="getData" finished-at="2020-02-07T15:53:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=439, voucher_code=Redeem2019, validationNode=, Runmode=Y, class_id=425766, ExpectedResponseValue=Invalid Coupon Code!, flag=freevoucher, validationParam=message, offer_for=ess, user_id=14079428}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyVoucherCodeAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.ApplyVoucherCodeAPI@41294f8]" name="quit" is-config="true" duration-ms="87" started-at="2020-02-07T15:53:16Z" finished-at="2020-02-07T15:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.ApplyVoucherCodeAPI -->
+    </test> <!-- ApplyVoucherCodeTest -->
+    <test name="SearchContentbyKeywordTest" duration-ms="1509" started-at="2020-02-07T10:23:17Z" finished-at="2020-02-07T10:23:18Z">
+      <class name="com.LearningAPI.TestCases.SearchContentbyKeyword_API">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.SearchContentbyKeyword_API@68dc098b]" name="init" is-config="true" duration-ms="4" started-at="2020-02-07T15:53:17Z" finished-at="2020-02-07T15:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="SearchContentbyKeyword_API_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.SearchContentbyKeyword_API@68dc098b]" name="SearchContentbyKeyword_API_Test" duration-ms="1383" started-at="2020-02-07T15:53:17Z" data-provider="getData" finished-at="2020-02-07T15:53:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, start=0, validationNode=results.responseHeader, action=keyword, Runmode=Y, offset=100, class_id=36, ExpectedResponseValue=0, service_id=, subject_id=, type=, validationParam=status, user_id=14077155, text=PHYSICAL WORLD, content_id=, chapter_id=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchContentbyKeyword_API_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.SearchContentbyKeyword_API@68dc098b]" name="quit" is-config="true" duration-ms="87" started-at="2020-02-07T15:53:18Z" finished-at="2020-02-07T15:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.SearchContentbyKeyword_API -->
+    </test> <!-- SearchContentbyKeywordTest -->
+    <test name="GetMCQQuestionListTest" duration-ms="10328" started-at="2020-02-07T10:23:18Z" finished-at="2020-02-07T10:23:29Z">
+      <class name="com.LearningAPI.TestCases.GetMCQQuestionListAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.GetMCQQuestionListAPI@3148f668]" name="init" is-config="true" duration-ms="6" started-at="2020-02-07T15:53:18Z" finished-at="2020-02-07T15:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="GetMCQQuestionListAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.GetMCQQuestionListAPI@3148f668]" name="GetMCQQuestionListAPI_Test" duration-ms="10167" started-at="2020-02-07T15:53:18Z" data-provider="getData" finished-at="2020-02-07T15:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{level=1, board_id=180, test_service_type=mct_question_list, session_id=c3ltpfmt745cajlbhe1rnrs504, validationNode=, Runmode=Y, container_id=1053,1054,1055,1056, ExpectedResponseValue=Force and Laws of Motion, service_id=2297, test=multiple, validationParam=title, user_id=10075915}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetMCQQuestionListAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.GetMCQQuestionListAPI@3148f668]" name="quit" is-config="true" duration-ms="106" started-at="2020-02-07T15:53:29Z" finished-at="2020-02-07T15:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.GetMCQQuestionListAPI -->
+    </test> <!-- GetMCQQuestionListTest -->
+    <test name="ProfileUpdateTest" duration-ms="724" started-at="2020-02-07T10:23:29Z" finished-at="2020-02-07T10:23:30Z">
+      <class name="com.LearningAPI.TestCases.ProfileUpdateAPI">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.LearningAPI.TestCases.ProfileUpdateAPI@609db546]" name="init" is-config="true" duration-ms="2" started-at="2020-02-07T15:53:29Z" finished-at="2020-02-07T15:53:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ProfileUpdateAPI_Test(java.util.Hashtable)[pri:0, instance:com.LearningAPI.TestCases.ProfileUpdateAPI@609db546]" name="ProfileUpdateAPI_Test" duration-ms="589" started-at="2020-02-07T15:53:29Z" data-provider="getData" finished-at="2020-02-07T15:53:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{board_id=180, phonecode=+91, name=PramodExtramarks, country_id=99, validationNode=, state_id=, Runmode=Y, class_id=33, city=Gurugram, ExpectedResponseValue=success, postalcode=, validationParam=message, phonenumber=9865329865, school_name=, gender=, user_id=14078530}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfileUpdateAPI_Test -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.LearningAPI.TestCases.ProfileUpdateAPI@609db546]" name="quit" is-config="true" duration-ms="99" started-at="2020-02-07T15:53:30Z" finished-at="2020-02-07T15:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.LearningAPI.TestCases.ProfileUpdateAPI -->
+    </test> <!-- ProfileUpdateTest -->
+  </suite> <!-- Suite -->
+</testng-results>
